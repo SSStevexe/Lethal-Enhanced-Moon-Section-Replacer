@@ -25,6 +25,7 @@ These specific sections are supported for this release:
 ## Command arguments
 
 - `--main_file` - The main moon configuration file. Default is `main.json`.
+- `--moon` - Which moon to target. These moons are found by looking at the `moon` section of the main configuration file. Ex: `March`, `Experimentation`, etc...
 - `--replace` - The section to replace. Options are `scrap`, `outside`, `inside`, and `daytime`.
 
-Example: `py moon_section_replacer.py --main_file main.json --replace scrap`
+Example: `py moon_section_replacer.py --main_file main.json --moon march --replace scrap`
