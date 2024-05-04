@@ -135,19 +135,28 @@ def get_main_file():
         exit(0)
 
 
-# main function
-if __name__ == "__main__":
-    get_main_file()
-    set_moon_data(main_file)
-    print_list_of_moon_names()
-    target_moon = input("Enter the name of the moon you want to replace data for: ")
+def multiple_moons_replacement():
+    multiple_moon_replacement_list = list()
+    print(
+        "Enter the names of the moons you want to replace data for one at a time. Type \"all\" to affect ALL moons!\n")
+    moon_name = input("Moon to include in replacement (type \"done!\" to end): ")
+    while moon_name != "done!" or moon_name != "all":
+        if moon_name == "all":
+            multiple_moon_replacement_list = moon_names
+            break
+        if not validate_moon_name(moon_name):
+            print("Invalid moon name.\n")
+        else:
+            multiple_moon_replacement_list.append(moon_name)
+        moon_name = input("Moon to include in replacement (type \"done!\" to end): ")
+    print("Moons you have requested to replace data for: {}\n".format(multiple_moon_replacement_list))
+    section_name = get_valid_section_name_from_user()
+    for moon in multiple_moon_replacement_list:
+        replacement_data = get_json_data("{}.json".format(section_name))
+        set_new_moon_section_data(section_words[section_name], moon, replacement_data)
 
-    while not validate_moon_name(target_moon):
-        print("Invalid moon name. Please enter a valid moon name.\n")
-        target_moon = input("Enter the name of the moon you want to replace data for: ")
 
-    print("Valid moon name entered. Now targeting moon: " + target_moon + "\n")
-
+def get_valid_section_name_from_user():
     section_name = input(
         "Enter the name of the section you want to replace data for (scrap, outside, inside, daytime): ")
 
@@ -155,8 +164,36 @@ if __name__ == "__main__":
         print("Invalid section name. Please enter a valid section name.\n")
         section_name = input(
             "Enter the name of the section you want to replace data for (scrap, outside, inside, daytime): ")
+    return section_name
 
-    section_data = get_moon_section_data(section_words[section_name], target_moon)
+
+def get_valid_moon_name_from_user():
+    moon_name = input("Enter the name of the moon you want to replace data for: ")
+    while not validate_moon_name(moon_name):
+        print("Invalid moon name. Please enter a valid moon name.\n")
+        moon_name = input("Enter the name of the moon you want to replace data for: ")
+    return moon_name
+
+
+def single_moon_replacement():
+    target_moon = get_valid_moon_name_from_user()
+    section_name = get_valid_section_name_from_user()
     replacement_data = get_json_data("{}.json".format(section_name))
     set_new_moon_section_data(section_words[section_name], target_moon, replacement_data)
+
+
+# main function
+if __name__ == "__main__":
+    get_main_file()
+    set_moon_data(main_file)
+    print_list_of_moon_names()
+
+    multiple_moon_inquery = input("Did you want to replace data for multiple moons? (y/n): ")
+
+    if "y" in multiple_moon_inquery.lower():
+        multiple_moons_replacement()
+    else:
+        single_moon_replacement()
+
+    print("Replacement process complete!\n")
     input("Press Enter to exit...")
