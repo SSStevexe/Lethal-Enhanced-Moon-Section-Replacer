@@ -1,0 +1,359 @@
+[
+  {
+    "key": "Baboon hawk",
+    "value": {
+      "override": false,
+      "rarity": 56
+    }
+  },
+  {
+    "key": "MouthDog",
+    "value": {
+      "override": false,
+      "rarity": 52
+    }
+  },
+  {
+    "key": "Spring",
+    "value": {
+      "override": false,
+      "rarity": 45
+    }
+  },
+  {
+    "key": "Crawler",
+    "value": {
+      "override": false,
+      "rarity": 38
+    }
+  },
+  {
+    "key": "Masked",
+    "value": {
+      "override": false,
+      "rarity": 16
+    }
+  },
+  {
+    "key": "ForestGiant",
+    "value": {
+      "override": false,
+      "rarity": 9
+    }
+  },
+  {
+    "key": "RedWoodGiant",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Blob",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Boomba",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Bunker Spider",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Centipede",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Demogorgon",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Docile Locust Bees",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Don't Touch Me",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Earth Leviathan",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Flowerman",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Football",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Girl",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Herobrine",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Hoarding bug",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "ImmortalSnail",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Jester",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Lasso",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Locker",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Manticoil",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Nutcracker",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Peeper",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Puffer",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Red Locust Bees",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Shrimp",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Shy guy",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Siren Head",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "SlendermanEnemy",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "The Fiend",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Walker",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Blobbugharloth",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "PufferHarloth",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "FreddyKrueger",
+    "value": {
+      "override": false,
+      "rarity": 99999
+    }
+  },
+  {
+    "key": "Foxy",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Gnome",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "HarpGhost",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "BagpipeGhost",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "blueGnome",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "EnforcerGhost",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "redGnome",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Butler",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Crystal Ray",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Maggie",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "RadMech",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "Tulip Snake",
+    "value": {
+      "override": false,
+      "rarity": 0
+    }
+  },
+  {
+    "key": "DriftWoodGiant",
+    "value": {
+      "override": false,
+      "rarity": 100
+    }
+  }
+]
