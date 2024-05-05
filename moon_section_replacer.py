@@ -61,6 +61,7 @@ def set_valid_moon_names(moons):
     for moon in moons:
         # Strip the key which contains the name of the moon of all numbers and only collect alpha characters
         moon_names.append(''.join(filter(str.isalpha, moon["key"])))
+    moon_names.sort()
 
 
 def get_moon_section_data(section, target_moon=""):
@@ -78,7 +79,7 @@ def set_new_moon_section_data(section, target_moon, replacement_data):
             moon["value"][section] = replacement_data
             main_file["moons"]["moons"] = moon_data
             # replace the main.json file with the new data
-            with open("Json Files/main.json", "w") as f:
+            with open("{}/main.json".format(json_file_directory), "w") as f:
                 json.dump(main_file, f, indent=4)
                 f.close()
             print("Section ->{}<- for moon ->{}<- has been replaced successfully with data from ->{}.json<-\n".format(
@@ -114,7 +115,6 @@ def validate_moon_name(name):
 
 
 def print_list_of_moon_names():
-    moon_names.sort()
     print("List of available moon names (alphabetical):\n")
     time.sleep(2)
     for name in moon_names:
@@ -182,10 +182,25 @@ def single_moon_replacement():
     set_new_moon_section_data(section_words[section_name], target_moon, replacement_data)
 
 
+def update_moon_rating_data():
+    data = get_json_data("moon_ratings.json")
+    if not data:
+        data["moons"] = {}
+    for moon_name in moon_names:
+        # create a key in the data file
+        if moon_name not in data["moons"]:
+            data["moons"][moon_name] = dict(risk="")
+    with open("{}/moon_ratings.json".format(json_file_directory), "w") as f:
+        json.dump(data, f, indent=4)
+        f.close()
+
+
+
 # main function
 if __name__ == "__main__":
     get_main_file()
     set_moon_data(main_file)
+    update_moon_rating_data()
     print_list_of_moon_names()
 
     multiple_moon_inquery = input("Did you want to replace data for multiple moons? (y/n): ")
