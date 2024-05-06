@@ -1,0 +1,163 @@
+{
+    "moons": {
+        "Acidir": {
+            "risk": "A"
+        },
+        "Adamance": {
+            "risk": "B"
+        },
+        "Argent": {
+            "risk": "A+"
+        },
+        "Assurance": {
+            "risk": "D"
+        },
+        "Asteroid": {
+            "risk": "B"
+        },
+        "AtlasAbyss": {
+            "risk": "B+"
+        },
+        "Auralis": {
+            "risk": "S++"
+        },
+        "Azure": {
+            "risk": "C"
+        },
+        "BlackMesa": {
+            "risk": "S+"
+        },
+        "Bozoros": {
+            "risk": "A-"
+        },
+        "CaltPrime": {
+            "risk": "S"
+        },
+        "Celest": {
+            "risk": "B"
+        },
+        "Celestria": {
+            "risk": "S+"
+        },
+        "Crystallum": {
+            "risk": "D+"
+        },
+        "Dine": {
+            "risk": "S"
+        },
+        "Echelon": {
+            "risk": "B"
+        },
+        "EchoReach": {
+            "risk": "C+"
+        },
+        "PsychSanctum": {
+            "risk": "A-"
+        },
+        "Rend": {
+            "risk": "A"
+        },
+        "Sierra": {
+            "risk": "A-"
+        },
+        "Solace": {
+            "risk": "B"
+        },
+        "Spectralis": {
+            "risk": "A+"
+        },
+        "Titan": {
+            "risk": "S+"
+        },
+        "Triskelion": {
+            "risk": "B+"
+        },
+        "Vow": {
+            "risk": "C"
+        },
+        "Zenit": {
+            "risk": "B"
+        },
+        "Experimentation": {
+            "risk": "B"
+        },
+        "Fray": {
+            "risk": "A+"
+        },
+        "Harloth": {
+            "risk": "S+"
+        },
+        "March": {
+            "risk": "B"
+        },
+        "Maritopia": {
+            "risk": "D"
+        },
+        "Nimbus": {
+            "risk": "B"
+        },
+        "Offense": {
+            "risk": "B"
+        },
+        "Aerona": {
+            "risk": "Unknown"
+        },
+        "Budapest": {
+            "risk": "A"
+        },
+        "Crest": {
+            "risk": "S+"
+        },
+        "Nyx": {
+            "risk": "D+"
+        },
+        "Sanguine": {
+            "risk": "A"
+        },
+        "Siabudabu": {
+            "risk": "S+"
+        },
+        "Artifice": {
+            "risk": "S++"
+        },
+        "Atlantica": {
+            "risk": "Wesley"
+        },
+        "Cosmocos": {
+            "risk": "Wesley"
+        },
+        "Desolation": {
+            "risk": "Wesley"
+        },
+        "Embrion": {
+            "risk": "S"
+        },
+        "Etern": {
+            "risk": "Wesley"
+        },
+        "FissionC": {
+            "risk": "Wesley"
+        },
+        "Gloom": {
+            "risk": "Wesley"
+        },
+        "Gordion": {
+            "risk": "Wesley"
+        },
+        "Gratar": {
+            "risk": "Wesley"
+        },
+        "Infernis": {
+            "risk": "Wesley"
+        },
+        "Junic": {
+            "risk": "Wesley"
+        },
+        "Oldred": {
+            "risk": "Wesley"
+        },
+        "Polarus": {
+            "risk": "Wesley"
+        }
+    }
+}

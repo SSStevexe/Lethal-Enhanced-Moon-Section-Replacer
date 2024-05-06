@@ -8,6 +8,13 @@ section_words = {
     "daytime": "daytime_enemies"
 }
 
+# moon extra info
+moon_extra_info_file = "moon_extra_info.json"
+moon_risk_levels = ["D-", "D", "D+", "C-", "C", "C+", "B-", "B", "B+", "A-", "A", "A+", "S-", "S", "S+", "S++",
+                    "Unknown", "P", "Wesley"]
+# multi moon replacement options
+multi_moon_replacement_options = ["all", "risk", "manual"]
+
 json_file_directory = "Json Files"
 
 # JSON dict
@@ -16,20 +23,35 @@ main_file = {}
 moon_data = {}
 # Valid moon names
 moon_names = list()
+# Data from the moon extra info file
+moon_extra_info_data = {}
 
 
 def get_json_data(file):
-    with open("{}/{}".format(json_file_directory, file), "r") as f:
+    try:
+        with open("{}/{}".format(json_file_directory, file), "r") as f:
+            try:
+                data = json.load(f)
+                return data
+            except json.JSONDecodeError as e:
+                print("Invalid Json file. Please check the file and try again.")
+                print(e)
+                input("Press Enter to exit...")
+                exit(0)
+            finally:
+                f.close()
+    except FileNotFoundError as e:
+        print("File not found. Creating an empty file...")
         try:
-            data = json.load(f)
-            return data
-        except json.JSONDecodeError as e:
-            print("Invalid Json file. Please check the file and try again.")
+            with open("{}/{}".format(json_file_directory, file), "w") as f:
+                json.dump({}, f, indent=4)
+                f.close()
+                return {}
+        except Exception as e:
+            print("An error occurred while creating the file.")
             print(e)
             input("Press Enter to exit...")
             exit(0)
-        finally:
-            f.close()
 
 
 def set_moon_data(data):
@@ -116,10 +138,21 @@ def validate_moon_name(name):
 
 def print_list_of_moon_names():
     print("List of available moon names (alphabetical):\n")
+    print("{:<25} {:<5}\n".format("Moon", "Risk Level"))
     time.sleep(2)
     for name in moon_names:
-        # have some space from the left
-        print(" " * 5 + name)
+        risk_level = moon_extra_info_data["moons"][name]['risk']
+        if risk_level == "":
+            print("Risk level not set for moon ->{}<-. Please update in {} before continuing.".format(name,
+                                                                                                      moon_extra_info_file))
+            input("Press Enter to exit...")
+            exit(0)
+        if validate_moon_risk_level(risk_level) is False:
+            print("Invalid risk level detected for moon ->{}<- Risk: {}. Please update in {} before continuing.".format(
+                name, risk_level, moon_extra_info_file))
+            input("Press Enter to exit...")
+            exit(0)
+        print("{:<25} {:<5}".format(name, risk_level))
     print("\n")
 
 
@@ -137,23 +170,71 @@ def get_main_file():
 
 def multiple_moons_replacement():
     multiple_moon_replacement_list = list()
-    print(
-        "Enter the names of the moons you want to replace data for one at a time. Type \"all\" to affect ALL moons!\n")
+    multi_moon_replacement_type = get_multi_moon_replacement_type_from_user()
+    if multi_moon_replacement_type == "all":
+        multiple_moon_replacement_list = moon_names
+    elif multi_moon_replacement_type == "risk":
+        process_multi_moon_replacement_risk(multiple_moon_replacement_list)
+    elif multi_moon_replacement_type == "manual":
+        process_multi_moon_replacement_manual(multiple_moon_replacement_list)
+
+    print("\nMoons you have requested to replace data for: {}\n".format(multiple_moon_replacement_list))
+    section_name = get_valid_section_name_from_user()
+    for moon in multiple_moon_replacement_list:
+        replacement_data = get_json_data("{}.json".format(section_name))
+        set_new_moon_section_data(section_words[section_name], moon, replacement_data)
+
+
+def process_multi_moon_replacement_risk(multiple_moon_replacement_list):
+    risk_level = get_risk_level_from_user()
+    for moon in moon_extra_info_data["moons"]:
+        if moon_extra_info_data["moons"][moon]["risk"] == risk_level:
+            multiple_moon_replacement_list.append(moon)
+
+
+def get_risk_level_from_user():
+    moon_risk_level_to_target = input("Enter the risk level you would like to target: {}".format(moon_risk_levels))
+    while not validate_moon_risk_level(moon_risk_level_to_target):
+        print("Invalid risk level. Please enter a valid risk level.\n")
+        moon_risk_level_to_target = input("Enter the risk level you would like to target: {}".format(moon_risk_levels))
+    return moon_risk_level_to_target
+
+
+def validate_moon_risk_level(level):
+    global moon_risk_levels
+    if level in moon_risk_levels:
+        return True
+    else:
+        return False
+
+
+def process_multi_moon_replacement_manual(multiple_moon_replacement_list):
+    print("Enter the names of the moons you want to replace data for one at a time.\n")
     moon_name = input("Moon to include in replacement (type \"done!\" to end): ")
-    while moon_name != "done!" or moon_name != "all":
-        if moon_name == "all":
-            multiple_moon_replacement_list = moon_names
-            break
+    while moon_name != "done!":
         if not validate_moon_name(moon_name):
             print("Invalid moon name.\n")
         else:
             multiple_moon_replacement_list.append(moon_name)
         moon_name = input("Moon to include in replacement (type \"done!\" to end): ")
-    print("Moons you have requested to replace data for: {}\n".format(multiple_moon_replacement_list))
-    section_name = get_valid_section_name_from_user()
-    for moon in multiple_moon_replacement_list:
-        replacement_data = get_json_data("{}.json".format(section_name))
-        set_new_moon_section_data(section_words[section_name], moon, replacement_data)
+
+
+def get_multi_moon_replacement_type_from_user():
+    multi_moon_replacement_type = input(
+        "How would you like to replace the data for multiple moons? {}\n".format(multi_moon_replacement_options))
+    while not validate_multi_moon_replacement_type(multi_moon_replacement_type):
+        print("Invalid multi moon replacement type. Please enter a valid type.\n")
+        multi_moon_replacement_type = input(
+            "How would you like to replace the data for multiple moons? {}\n".format(multi_moon_replacement_options))
+    return multi_moon_replacement_type
+
+
+def validate_multi_moon_replacement_type(type):
+    global multi_moon_replacement_options
+    if type in multi_moon_replacement_options:
+        return True
+    else:
+        return False
 
 
 def get_valid_section_name_from_user():
@@ -182,25 +263,34 @@ def single_moon_replacement():
     set_new_moon_section_data(section_words[section_name], target_moon, replacement_data)
 
 
-def update_moon_rating_data():
-    data = get_json_data("moon_ratings.json")
-    if not data:
-        data["moons"] = {}
+def update_moon_extra_info_data():
+    global moon_extra_info_data
+    moon_extra_info_data = get_json_data(moon_extra_info_file)
+    new_moon_detected = False
+    if not moon_extra_info_data:
+        moon_extra_info_data["moons"] = {}
     for moon_name in moon_names:
         # create a key in the data file
-        if moon_name not in data["moons"]:
-            data["moons"][moon_name] = dict(risk="")
-    with open("{}/moon_ratings.json".format(json_file_directory), "w") as f:
-        json.dump(data, f, indent=4)
+        if moon_name not in moon_extra_info_data["moons"]:
+            print("Detected new moon! ->{}<- added to moon_extra_info.json!\n".format(moon_name))
+            new_moon_detected = True
+            moon_extra_info_data["moons"][moon_name] = dict(risk="")
+    with open("{}/{}".format(json_file_directory, moon_extra_info_file), "w") as f:
+        json.dump(moon_extra_info_data, f, indent=4)
         f.close()
-
+    if not new_moon_detected:
+        print("No new moons detected. Moon extra info data in {} is up to date!\n".format(moon_extra_info_file))
+    else:
+        print("Make sure to update the risk levels for the new moons in {} before continuing.\n".format( moon_extra_info_file))
+        input("Press Enter to continue...")
+        exit(0)
 
 
 # main function
 if __name__ == "__main__":
     get_main_file()
     set_moon_data(main_file)
-    update_moon_rating_data()
+    update_moon_extra_info_data()
     print_list_of_moon_names()
 
     multiple_moon_inquery = input("Did you want to replace data for multiple moons? (y/n): ")
