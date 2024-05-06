@@ -39,160 +39,66 @@ Example (no args): `py moon_section_replacer.py`
 ## Example Run
 
 ```text
+No new moons detected. Moon extra info data in moon_extra_info.json is up to date!
+
 List of available moon names (alphabetical):
 
-     Acidir
-     Adamance
-     Argent
-     Artifice
-     Assurance
-     Asteroid
-     Atlantica
-     AtlasAbyss
-     Auralis
-     Azure
-     BlackMesa
-     Bozoros
-     CaltPrime
-     Celest
-     Celestria
-     Cosmocos
-     Crystallum
-     Desolation
-     Dine
-     Echelon
-     EchoReach
-     Embrion
-     Etern
-     Experimentation
-     FissionC
-     Fray
-     Gloom
-     Gordion
-     Gratar
-     Harloth
-     Infernis
-     Junic
-     March
-     Maritopia
-     Nimbus
-     Offense
-     Oldred
-     Polarus
-     PsychSanctum
-     Rend
-     Sierra
-     Solace
-     Spectralis
-     Titan
-     Triskelion
-     Vow
-     Zenit
+Moon                      Risk Level
+
+Acidir                    A    
+Adamance                  B    
+Aerona                    Unknown
+Argent                    A+   
+Artifice                  S++  
+Assurance                 D    
+Asteroid                  B    
+Atlantica                 Wesley
+AtlasAbyss                B+   
+Auralis                   S++  
+Azure                     C    
+BlackMesa                 S+   
+Bozoros                   A-   
+Budapest                  A    
+CaltPrime                 S    
+Celest                    B    
+Celestria                 S+   
+Cosmocos                  Wesley
+Crest                     S+   
+Crystallum                D+   
+Desolation                Wesley
+Dine                      S    
+Echelon                   B    
+EchoReach                 C+   
+Embrion                   S    
+Etern                     Wesley
+Experimentation           B    
+FissionC                  Wesley
+Fray                      A+   
+Gloom                     Wesley
+Gordion                   Wesley
+Gratar                    Wesley
+Harloth                   S+   
+Infernis                  Wesley
+Junic                     Wesley
+March                     B    
+Maritopia                 D    
+Nimbus                    B    
+Nyx                       D+   
+Offense                   B    
+Oldred                    Wesley
+Polarus                   Wesley
+PsychSanctum              A-   
+Rend                      A    
+Sanguine                  A    
+Siabudabu                 S+   
+Sierra                    A-   
+Solace                    B    
+Spectralis                A+   
+Titan                     S+   
+Triskelion                B+   
+Vow                       C    
+Zenit                     B    
 
 
-Did you want to replace data for multiple moons? (y/n): yes
-Enter the names of the moons you want to replace data for one at a time. Type "all" to affect ALL moons!
-
-Moon to include in replacement (type "done!" to end): vow
-Moon to include in replacement (type "done!" to end): assurance
-Moon to include in replacement (type "done!" to end): march
-Moon to include in replacement (type "done!" to end): zenit
-Moon to include in replacement (type "done!" to end): all
-Moons you have requested to replace data for: ['Acidir', 'Adamance', 'Argent', 'Artifice', 'Assurance', 'Asteroid', 'Atlantica', 'AtlasAbyss', 'Auralis', 'Azure', 'BlackMesa', 'Bozoros', 'CaltPrime', 'Celest', 'Celestria', 'Cosmocos', 'Crystallum', 'Desolation', 'Dine', 'Echelon', 'EchoReach', 'Embrion', 'Etern', 'Experimentation', 'FissionC', 'Fray', 'Gloom', 'Gordion', 'Gratar', 'Harloth', 'Infernis', 'Junic', 'March', 'Maritopia', 'Nimbus', 'Offense', 'Oldred', 'Polarus', 'PsychSanctum', 'Rend', 'Sierra', 'Solace', 'Spectralis', 'Titan', 'Triskelion', 'Vow', 'Zenit']
-
-Enter the name of the section you want to replace data for (scrap, outside, inside, daytime): scrap
-Section ->loot_table<- for moon ->Acidir<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Adamance<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Argent<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Artifice<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Assurance<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Asteroid<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Atlantica<- has been replaced successfully with data from ->scrap.json<-
-
-
-Section ->loot_table<- for moon ->Auralis<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Azure<- has been replaced successfully with data from ->scrap.json<-
-
-
-Section ->loot_table<- for moon ->Bozoros<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->CaltPrime<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Celest<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Celestria<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Cosmocos<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Crystallum<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Desolation<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Dine<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Echelon<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->EchoReach<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Embrion<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Etern<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Experimentation<- has been replaced successfully with data from ->scrap.json<-
-
-
-Section ->loot_table<- for moon ->Fray<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Gloom<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Gordion<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Gratar<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Harloth<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Infernis<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Junic<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->March<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Maritopia<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Nimbus<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Offense<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Oldred<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Polarus<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->PsychSanctum<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Rend<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Sierra<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Solace<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Spectralis<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Titan<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Triskelion<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Vow<- has been replaced successfully with data from ->scrap.json<-
-
-Section ->loot_table<- for moon ->Zenit<- has been replaced successfully with data from ->scrap.json<-
-
-Replacement process complete!
-
-Press Enter to exit...
+Did you want to replace data for multiple moons? (y/n): 
 ```
