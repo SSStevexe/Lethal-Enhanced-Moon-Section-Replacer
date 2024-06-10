@@ -22,20 +22,17 @@ These specific sections are supported for this release:
 2. Place the tool in the same directory as the moon configuration file folder `Json Files`.
 3. Run the tool using the command: `py moon_section_replacer.py` or use the next section's command arguments.
 
+OR
+
+1. Download and use the precompiled PyInstaller version from the releases, which is a standalone executable.
+
 ## Features
 - Replace specific moon sections with data from the provided JSON files.
-- Mutliple moons are supported in a single run.
+- Multiple moons are supported in a single run.
 
-## Command arguments ( not yet implemented )
+## Command used with PyInstaller
+`pyinstaller --onefile --name Lethal_Enhanced_Text_Replacer --icon=.\PyInstaller/discord-avatar-512-1VMJP.ico --upx-dir="C:\Program Files\upx-4.2.4-win64" .\moon_section_replacer.py`
 
-- `--main_file` - The main moon configuration file. Default is `main.json`.
-- `--moon` - Which moon to target. These moons are found by looking at the `moon` section of the main configuration file. Ex: `March`, `Experimentation`, etc...
-- `--replace` - The section to replace. Options are `scrap`, `outside`, `inside`, and `daytime`.
-
-Example ( args - NOT YET IMPLEMENTED): `py moon_section_replacer.py --main_file main.json --moon march --replace scrap`
-
-
-Example (no args): `py moon_section_replacer.py`
 ## Example Run
 
 ```text

@@ -1,5 +1,6 @@
 import json
 import time
+import re
 
 section_words = {
     "scrap": "loot_table",
@@ -8,17 +9,26 @@ section_words = {
     "daytime": "daytime_enemies"
 }
 
+json_file_names = {
+    "scrap": "scrap.json",
+    "outside": "outside.json",
+    "inside": "inside.json",
+    "daytime": "daytime.json",
+    "main": "main.json"
+}
+
+json_files = {
+}
+
 # moon extra info
 moon_extra_info_file = "moon_extra_info.json"
 moon_risk_levels = ["D-", "D", "D+", "C-", "C", "C+", "B-", "B", "B+", "A-", "A", "A+", "S-", "S", "S+", "S++",
-                    "Unknown", "P", "Wesley"]
+                    "Unknown", "P", "Company"]
 # multi moon replacement options
 multi_moon_replacement_options = ["all", "risk", "manual"]
 
 json_file_directory = "Json Files"
 
-# JSON dict
-main_file = {}
 # Moons available
 moon_data = {}
 # Valid moon names
@@ -32,6 +42,7 @@ def get_json_data(file):
         with open("{}/{}".format(json_file_directory, file), "r") as f:
             try:
                 data = json.load(f)
+                print("Loaded data from ->{}<- successfully! ✅\n".format(file))
                 return data
             except json.JSONDecodeError as e:
                 print("Invalid Json file. Please check the file and try again.")
@@ -41,11 +52,12 @@ def get_json_data(file):
             finally:
                 f.close()
     except FileNotFoundError as e:
-        print("File not found. Creating an empty file...")
+        print("File: {} not found. Creating an empty file...".format(file))
         try:
             with open("{}/{}".format(json_file_directory, file), "w") as f:
                 json.dump({}, f, indent=4)
                 f.close()
+                input("Press Enter to acknowledge the file has been created and continue...This could break things.")
                 return {}
         except Exception as e:
             print("An error occurred while creating the file.")
@@ -95,6 +107,7 @@ def get_moon_section_data(section, target_moon=""):
 
 
 def set_new_moon_section_data(section, target_moon, replacement_data):
+    main_file = json_files["main"]
     # find the moon section data
     for moon in moon_data:
         if target_moon.lower() in moon["key"].lower():
@@ -104,10 +117,8 @@ def set_new_moon_section_data(section, target_moon, replacement_data):
             with open("{}/main.json".format(json_file_directory), "w") as f:
                 json.dump(main_file, f, indent=4)
                 f.close()
-            print("Section ->{}<- for moon ->{}<- has been replaced successfully with data from ->{}.json<-\n".format(
-                section, target_moon, section_to_json_name(section)))
-            return
-    print()
+                print("Updated data for moon ->{}<- in section ->{}<- successfully! ✅\n".format(target_moon, section))
+                return
 
 
 def section_to_json_name(section):
@@ -139,7 +150,6 @@ def validate_moon_name(name):
 def print_list_of_moon_names():
     print("List of available moon names (alphabetical):\n")
     print("{:<25} {:<5}\n".format("Moon", "Risk Level"))
-    time.sleep(2)
     for name in moon_names:
         risk_level = moon_extra_info_data["moons"][name]['risk']
         if risk_level == "":
@@ -154,35 +164,6 @@ def print_list_of_moon_names():
             exit(0)
         print("{:<25} {:<5}".format(name, risk_level))
     print("\n")
-
-
-def get_main_file():
-    global main_file
-    # look for main file in current directory
-    try:
-        main_file = get_json_data("main.json")
-    except FileNotFoundError as e:
-        print("Main file not found. Make sure main.json is in the same directory as this script.")
-        print(e)
-        input("Press Enter to exit...")
-        exit(0)
-
-
-def multiple_moons_replacement():
-    multiple_moon_replacement_list = list()
-    multi_moon_replacement_type = get_multi_moon_replacement_type_from_user()
-    if multi_moon_replacement_type == "all":
-        multiple_moon_replacement_list = moon_names
-    elif multi_moon_replacement_type == "risk":
-        process_multi_moon_replacement_risk(multiple_moon_replacement_list)
-    elif multi_moon_replacement_type == "manual":
-        process_multi_moon_replacement_manual(multiple_moon_replacement_list)
-
-    print("\nMoons you have requested to replace data for: {}\n".format(multiple_moon_replacement_list))
-    section_name = get_valid_section_name_from_user()
-    for moon in multiple_moon_replacement_list:
-        replacement_data = get_json_data("{}.json".format(section_name))
-        set_new_moon_section_data(section_words[section_name], moon, replacement_data)
 
 
 def process_multi_moon_replacement_risk(multiple_moon_replacement_list):
@@ -256,13 +237,6 @@ def get_valid_moon_name_from_user():
     return moon_name
 
 
-def single_moon_replacement():
-    target_moon = get_valid_moon_name_from_user()
-    section_name = get_valid_section_name_from_user()
-    replacement_data = get_json_data("{}.json".format(section_name))
-    set_new_moon_section_data(section_words[section_name], target_moon, replacement_data)
-
-
 def update_moon_extra_info_data():
     global moon_extra_info_data
     moon_extra_info_data = get_json_data(moon_extra_info_file)
@@ -279,26 +253,93 @@ def update_moon_extra_info_data():
         json.dump(moon_extra_info_data, f, indent=4)
         f.close()
     if not new_moon_detected:
-        print("No new moons detected. Moon extra info data in {} is up to date!\n".format(moon_extra_info_file))
+        print("No new moons detected in main.json. Moon extra info data in {} is up to date! ✅\n".format(
+            moon_extra_info_file))
     else:
-        print("Make sure to update the risk levels for the new moons in {} before continuing.\n".format( moon_extra_info_file))
+        print("Make sure to update the risk levels for the new moons in {} before continuing.\n".format(
+            moon_extra_info_file))
         input("Press Enter to continue...")
         exit(0)
 
 
+def get_file_to_replace_input():
+    valid_file_names = ["outside", "inside", "daytime", "all", "skip"]
+    user_choice = ""
+    while user_choice not in valid_file_names:
+        user_choice = input(
+            "\nSelect which section of moons to replace by their associated risk: {}".format(valid_file_names))
+    return user_choice
+
+
+def get_user_input_for_scrap_update():
+    user_input = input("Would you like to update the scrap section for all moons? (y/n): ")
+    while user_input.lower() not in ["y", "n"]:
+        print("Invalid input. Please enter a valid input.\n")
+        user_input = input("Would you like to update the scrap section for all moons? (y/n): ")
+    return user_input
+
+
+def load_json_files():
+    for key, value in json_file_names.items():
+        time.sleep(0.5)
+        json_files[key] = get_json_data(value)
+
+
+def get_moon_risk(moon):
+    moon_name = moon["key"]
+    return moon_extra_info_data["moons"][strip_to_alpha(moon_name)]["risk"]
+
+
+def update_moon_section(moon_name, moon_risk, section):
+    section_data = get_data_from_json_given_risk(moon_risk, section)
+    set_new_moon_section_data(section_words[section], moon_name, section_data)
+
+
+def update_moon_data_by_risk(section_to_update):
+    if section_to_update == "skip":
+        return
+    sections_to_update = ["inside", "outside", "daytime"] if section_to_update == "all" else [section_to_update]
+    for moon in moon_data:
+        moon_risk = get_moon_risk(moon)
+        for section in sections_to_update:
+            update_moon_section(moon["key"], moon_risk, section)
+
+
+def get_data_from_json_given_risk(risk, json_file):
+    json_data = json_files[json_file]
+    risk_data = ""
+    for data in json_data:
+        if data["risk"] == risk:
+            risk_data = data["data"]
+            break
+    return risk_data
+
+
+def strip_to_alpha(input_string):
+    return re.sub(r'[^a-zA-Z]', '', input_string)
+
+
+def update_scrap_section_for_moons():
+    target_section = "scrap"
+    for moon in moon_data:
+        set_new_moon_section_data(section_words[target_section], moon["key"], json_files[target_section])
+
+
 # main function
 if __name__ == "__main__":
-    get_main_file()
-    set_moon_data(main_file)
+    print("Loading Json Data...\n")
+    load_json_files()
+    set_moon_data(json_files["main"])
     update_moon_extra_info_data()
     print_list_of_moon_names()
 
-    multiple_moon_inquery = input("Did you want to replace data for multiple moons? (y/n): ")
+    user_input_section_replacement = get_file_to_replace_input()
+    update_moon_data_by_risk(user_input_section_replacement)
 
-    if "y" in multiple_moon_inquery.lower():
-        multiple_moons_replacement()
-    else:
-        single_moon_replacement()
+    user_input_update_scrap = get_user_input_for_scrap_update()
+
+    if user_input_update_scrap.lower() == "y":
+        update_scrap_section_for_moons()
 
     print("Replacement process complete!\n")
     input("Press Enter to exit...")
