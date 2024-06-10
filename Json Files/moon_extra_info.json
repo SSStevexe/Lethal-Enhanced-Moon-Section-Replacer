@@ -1,7 +1,7 @@
 {
     "moons": {
         "Acidir": {
-            "risk": "A"
+            "risk": "S"
         },
         "Adamance": {
             "risk": "B"
@@ -99,9 +99,6 @@
         "Offense": {
             "risk": "B"
         },
-        "Aerona": {
-            "risk": "Unknown"
-        },
         "Budapest": {
             "risk": "A"
         },
@@ -114,50 +111,50 @@
         "Sanguine": {
             "risk": "A"
         },
-        "Siabudabu": {
-            "risk": "S+"
-        },
         "Artifice": {
             "risk": "S++"
         },
         "Atlantica": {
-            "risk": "Wesley"
+            "risk": "B"
         },
         "Cosmocos": {
-            "risk": "Wesley"
+            "risk": "Unknown"
         },
         "Desolation": {
-            "risk": "Wesley"
+            "risk": "A"
         },
         "Embrion": {
             "risk": "S"
         },
         "Etern": {
-            "risk": "Wesley"
+            "risk": "S+"
         },
         "FissionC": {
-            "risk": "Wesley"
+            "risk": "A"
         },
         "Gloom": {
-            "risk": "Wesley"
+            "risk": "B"
         },
         "Gordion": {
-            "risk": "Wesley"
+            "risk": "Company"
         },
         "Gratar": {
-            "risk": "Wesley"
+            "risk": "A"
         },
         "Infernis": {
-            "risk": "Wesley"
+            "risk": "B+"
         },
         "Junic": {
-            "risk": "Wesley"
+            "risk": "C"
         },
         "Oldred": {
-            "risk": "Wesley"
+            "risk": "S+"
         },
         "Polarus": {
-            "risk": "Wesley"
+            "risk": "A"
+        },
+        "StarlancerZero": {
+            "risk": "Unknown"
         }
     }
 }

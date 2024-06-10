@@ -1,331 +1,7146 @@
 [
   {
-    "key": "Manticoil",
-    "value": {
-      "override": false,
-      "rarity": 65
-    }
+    "risk": "D-",
+    "data": [
+      {
+        "key": "Girl",
+        "value": {
+          "override": true,
+          "rarity": 4
+        }
+      },
+      {
+        "key": "Bunker Spider",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Centipede",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Blob",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "Flowerman",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "Spring",
+        "value": {
+          "override": true,
+          "rarity": 10
+        }
+      },
+      {
+        "key": "Jester",
+        "value": {
+          "override": true,
+          "rarity": 4
+        }
+      },
+      {
+        "key": "Puffer",
+        "value": {
+          "override": true,
+          "rarity": 10
+        }
+      },
+      {
+        "key": "Nutcracker",
+        "value": {
+          "override": true,
+          "rarity": 4
+        }
+      },
+      {
+        "key": "Masked",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Butler",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "Hoarding bug",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "Crawler",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Walker",
+        "value": {
+          "override": true,
+          "rarity": 4
+        }
+      },
+      {
+        "key": "Don't Touch Me",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "Football",
+        "value": {
+          "override": true,
+          "rarity": 4
+        }
+      },
+      {
+        "key": "Herobrine",
+        "value": {
+          "override": true,
+          "rarity": 4
+        }
+      },
+      {
+        "key": "Boomba",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Maggie",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "Crystal Ray",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "The Fiend",
+        "value": {
+          "override": true,
+          "rarity": 10
+        }
+      },
+      {
+        "key": "Locker",
+        "value": {
+          "override": true,
+          "rarity": 12
+        }
+      },
+      {
+        "key": "ImmortalSnail",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Cleaning Drone",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Moving Turret",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Shrimp",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "Demogorgon",
+        "value": {
+          "override": true,
+          "rarity": 10
+        }
+      },
+      {
+        "key": "redGnome",
+        "value": {
+          "override": true,
+          "rarity": 12
+        }
+      },
+      {
+        "key": "blueGnome",
+        "value": {
+          "override": true,
+          "rarity": 12
+        }
+      },
+      {
+        "key": "Shy guy",
+        "value": {
+          "override": true,
+          "rarity": 10
+        }
+      },
+      {
+        "key": "Men-stalker",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "SlendermanEnemy",
+        "value": {
+          "override": true,
+          "rarity": 12
+        }
+      },
+      {
+        "key": "Foxy",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "Baboon hawk",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "BagpipeGhost",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Docile Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Earth Leviathan",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "EnforcerGhost",
+        "value": {
+          "override": true,
+          "rarity": 12
+        }
+      },
+      {
+        "key": "ForestGiant",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "HarpGhost",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Lasso",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Manticoil",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "MouthDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Peeper",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "RadMech",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Red Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Sentinel",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "Tulip Snake",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Butler Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "SmallDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Freddles",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "NightmareFreddy",
+        "value": {
+          "override": true,
+          "rarity": 10
+        }
+      },
+      {
+        "key": "RollingGiant",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      }
+    ]
   },
   {
-    "key": "Docile Locust Bees",
-    "value": {
-      "override": false,
-      "rarity": 82
-    }
+    "risk": "D",
+    "data": [
+      {
+        "key": "Girl",
+        "value": {
+          "override": true,
+          "rarity": 6
+        }
+      },
+      {
+        "key": "Bunker Spider",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Centipede",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Blob",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Flowerman",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "Spring",
+        "value": {
+          "override": true,
+          "rarity": 12
+        }
+      },
+      {
+        "key": "Jester",
+        "value": {
+          "override": true,
+          "rarity": 6
+        }
+      },
+      {
+        "key": "Puffer",
+        "value": {
+          "override": true,
+          "rarity": 12
+        }
+      },
+      {
+        "key": "Nutcracker",
+        "value": {
+          "override": true,
+          "rarity": 6
+        }
+      },
+      {
+        "key": "Masked",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Butler",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "Hoarding bug",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Crawler",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Walker",
+        "value": {
+          "override": true,
+          "rarity": 6
+        }
+      },
+      {
+        "key": "Don't Touch Me",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Football",
+        "value": {
+          "override": true,
+          "rarity": 6
+        }
+      },
+      {
+        "key": "Herobrine",
+        "value": {
+          "override": true,
+          "rarity": 6
+        }
+      },
+      {
+        "key": "Boomba",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Maggie",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "Crystal Ray",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "The Fiend",
+        "value": {
+          "override": true,
+          "rarity": 12
+        }
+      },
+      {
+        "key": "Locker",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "ImmortalSnail",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Cleaning Drone",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Moving Turret",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Shrimp",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Demogorgon",
+        "value": {
+          "override": true,
+          "rarity": 12
+        }
+      },
+      {
+        "key": "redGnome",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "blueGnome",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "Shy guy",
+        "value": {
+          "override": true,
+          "rarity": 12
+        }
+      },
+      {
+        "key": "Men-stalker",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "SlendermanEnemy",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "Foxy",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "Baboon hawk",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "BagpipeGhost",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Docile Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Earth Leviathan",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "EnforcerGhost",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "ForestGiant",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "HarpGhost",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Lasso",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Manticoil",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "MouthDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Peeper",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "RadMech",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Red Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Sentinel",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "Tulip Snake",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Butler Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "SmallDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Freddles",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "NightmareFreddy",
+        "value": {
+          "override": true,
+          "rarity": 8
+        }
+      },
+      {
+        "key": "RollingGiant",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      }
+    ]
   },
   {
-    "key": "Baboon hawk",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
+    "risk": "D+",
+    "data": [
+      {
+        "key": "Girl",
+        "value": {
+          "override": true,
+          "rarity": 8
+        }
+      },
+      {
+        "key": "Bunker Spider",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Centipede",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Blob",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Flowerman",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "Spring",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "Jester",
+        "value": {
+          "override": true,
+          "rarity": 8
+        }
+      },
+      {
+        "key": "Puffer",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "Nutcracker",
+        "value": {
+          "override": true,
+          "rarity": 8
+        }
+      },
+      {
+        "key": "Masked",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Butler",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Hoarding bug",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Crawler",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Walker",
+        "value": {
+          "override": true,
+          "rarity": 8
+        }
+      },
+      {
+        "key": "Don't Touch Me",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Football",
+        "value": {
+          "override": true,
+          "rarity": 8
+        }
+      },
+      {
+        "key": "Herobrine",
+        "value": {
+          "override": true,
+          "rarity": 8
+        }
+      },
+      {
+        "key": "Boomba",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Maggie",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Crystal Ray",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "The Fiend",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "Locker",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "ImmortalSnail",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Cleaning Drone",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Moving Turret",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Shrimp",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Demogorgon",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "redGnome",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "blueGnome",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "Shy guy",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "Men-stalker",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "SlendermanEnemy",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "Foxy",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "Baboon hawk",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "BagpipeGhost",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Docile Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Earth Leviathan",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "EnforcerGhost",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "ForestGiant",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "HarpGhost",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Lasso",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Manticoil",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "MouthDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Peeper",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "RadMech",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Red Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Sentinel",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "Tulip Snake",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Butler Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "SmallDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Freddles",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "NightmareFreddy",
+        "value": {
+          "override": true,
+          "rarity": 10
+        }
+      },
+      {
+        "key": "RollingGiant",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      }
+    ]
   },
   {
-    "key": "BagpipeGhost",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
+    "risk": "C-",
+    "data": [
+      {
+        "key": "Girl",
+        "value": {
+          "override": true,
+          "rarity": 10
+        }
+      },
+      {
+        "key": "Bunker Spider",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Centipede",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Blob",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Flowerman",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Spring",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "Jester",
+        "value": {
+          "override": true,
+          "rarity": 10
+        }
+      },
+      {
+        "key": "Puffer",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "Nutcracker",
+        "value": {
+          "override": true,
+          "rarity": 10
+        }
+      },
+      {
+        "key": "Masked",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Butler",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Hoarding bug",
+        "value": {
+          "override": true,
+          "rarity": 46
+        }
+      },
+      {
+        "key": "Crawler",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Walker",
+        "value": {
+          "override": true,
+          "rarity": 10
+        }
+      },
+      {
+        "key": "Don't Touch Me",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Football",
+        "value": {
+          "override": true,
+          "rarity": 10
+        }
+      },
+      {
+        "key": "Herobrine",
+        "value": {
+          "override": true,
+          "rarity": 10
+        }
+      },
+      {
+        "key": "Boomba",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Maggie",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Crystal Ray",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "The Fiend",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "Locker",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "ImmortalSnail",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Cleaning Drone",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Moving Turret",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Shrimp",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Demogorgon",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "redGnome",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "blueGnome",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "Shy guy",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "Men-stalker",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "SlendermanEnemy",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "Foxy",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Baboon hawk",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "BagpipeGhost",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Docile Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Earth Leviathan",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "EnforcerGhost",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "ForestGiant",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "HarpGhost",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Lasso",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Manticoil",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "MouthDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Peeper",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "RadMech",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Red Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Sentinel",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Tulip Snake",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Butler Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "SmallDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Freddles",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "NightmareFreddy",
+        "value": {
+          "override": true,
+          "rarity": 12
+        }
+      },
+      {
+        "key": "RollingGiant",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      }
+    ]
   },
   {
-    "key": "Blob",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
+    "risk": "C",
+    "data": [
+      {
+        "key": "Girl",
+        "value": {
+          "override": true,
+          "rarity": 12
+        }
+      },
+      {
+        "key": "Bunker Spider",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Centipede",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Blob",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Flowerman",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Spring",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "Jester",
+        "value": {
+          "override": true,
+          "rarity": 12
+        }
+      },
+      {
+        "key": "Puffer",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "Nutcracker",
+        "value": {
+          "override": true,
+          "rarity": 12
+        }
+      },
+      {
+        "key": "Masked",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Butler",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Hoarding bug",
+        "value": {
+          "override": true,
+          "rarity": 48
+        }
+      },
+      {
+        "key": "Crawler",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Walker",
+        "value": {
+          "override": true,
+          "rarity": 12
+        }
+      },
+      {
+        "key": "Don't Touch Me",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Football",
+        "value": {
+          "override": true,
+          "rarity": 12
+        }
+      },
+      {
+        "key": "Herobrine",
+        "value": {
+          "override": true,
+          "rarity": 12
+        }
+      },
+      {
+        "key": "Boomba",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Maggie",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Crystal Ray",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "The Fiend",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "Locker",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "ImmortalSnail",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Cleaning Drone",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Moving Turret",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Shrimp",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Demogorgon",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "redGnome",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "blueGnome",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Shy guy",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "Men-stalker",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "SlendermanEnemy",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Foxy",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Baboon hawk",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "BagpipeGhost",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Docile Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Earth Leviathan",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "EnforcerGhost",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "ForestGiant",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "HarpGhost",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Lasso",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Manticoil",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "MouthDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Peeper",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "RadMech",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Red Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Sentinel",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Tulip Snake",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Butler Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "SmallDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Freddles",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "NightmareFreddy",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "RollingGiant",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      }
+    ]
   },
   {
-    "key": "blueGnome",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
+    "risk": "C+",
+    "data": [
+      {
+        "key": "Girl",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "Bunker Spider",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Centipede",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Blob",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Flowerman",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Spring",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Jester",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "Puffer",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Nutcracker",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "Masked",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Butler",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Hoarding bug",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "Crawler",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Walker",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "Don't Touch Me",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Football",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "Herobrine",
+        "value": {
+          "override": true,
+          "rarity": 14
+        }
+      },
+      {
+        "key": "Boomba",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Maggie",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Crystal Ray",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "The Fiend",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Locker",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "ImmortalSnail",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Cleaning Drone",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Moving Turret",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Shrimp",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Demogorgon",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "redGnome",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "blueGnome",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Shy guy",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Men-stalker",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "SlendermanEnemy",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Foxy",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Baboon hawk",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "BagpipeGhost",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Docile Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Earth Leviathan",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "EnforcerGhost",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "ForestGiant",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "HarpGhost",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Lasso",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Manticoil",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "MouthDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Peeper",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "RadMech",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Red Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Sentinel",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Tulip Snake",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Butler Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "SmallDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Freddles",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "NightmareFreddy",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "RollingGiant",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      }
+    ]
   },
   {
-    "key": "Boomba",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
+    "risk": "B-",
+    "data": [
+      {
+        "key": "Girl",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "Bunker Spider",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Centipede",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Blob",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Flowerman",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Spring",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Jester",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "Puffer",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Nutcracker",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "Masked",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Butler",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Hoarding bug",
+        "value": {
+          "override": true,
+          "rarity": 52
+        }
+      },
+      {
+        "key": "Crawler",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Walker",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "Don't Touch Me",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Football",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "Herobrine",
+        "value": {
+          "override": true,
+          "rarity": 16
+        }
+      },
+      {
+        "key": "Boomba",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Maggie",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Crystal Ray",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "The Fiend",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Locker",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "ImmortalSnail",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Cleaning Drone",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Moving Turret",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Shrimp",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Demogorgon",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "redGnome",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "blueGnome",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Shy guy",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Men-stalker",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "SlendermanEnemy",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Foxy",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Baboon hawk",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "BagpipeGhost",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Docile Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Earth Leviathan",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "EnforcerGhost",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "ForestGiant",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "HarpGhost",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Lasso",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Manticoil",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "MouthDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Peeper",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "RadMech",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Red Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Sentinel",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Tulip Snake",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Butler Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "SmallDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Freddles",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "NightmareFreddy",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "RollingGiant",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      }
+    ]
   },
   {
-    "key": "Bunker Spider",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
+    "risk": "B",
+    "data": [
+      {
+        "key": "Girl",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "Bunker Spider",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Centipede",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "Blob",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Flowerman",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Spring",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Jester",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "Puffer",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Nutcracker",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "Masked",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Butler",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Hoarding bug",
+        "value": {
+          "override": true,
+          "rarity": 54
+        }
+      },
+      {
+        "key": "Crawler",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Walker",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "Don't Touch Me",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Football",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "Herobrine",
+        "value": {
+          "override": true,
+          "rarity": 18
+        }
+      },
+      {
+        "key": "Boomba",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Maggie",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Crystal Ray",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "The Fiend",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Locker",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "ImmortalSnail",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "Cleaning Drone",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Moving Turret",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Shrimp",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Demogorgon",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "redGnome",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "blueGnome",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Shy guy",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Men-stalker",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "SlendermanEnemy",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Foxy",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Baboon hawk",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "BagpipeGhost",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Docile Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Earth Leviathan",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "EnforcerGhost",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "ForestGiant",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "HarpGhost",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Lasso",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Manticoil",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "MouthDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Peeper",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "RadMech",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Red Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Sentinel",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Tulip Snake",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Butler Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "SmallDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Freddles",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "NightmareFreddy",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "RollingGiant",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      }
+    ]
   },
   {
-    "key": "Butler",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
+    "risk": "B+",
+    "data": [
+      {
+        "key": "Girl",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Bunker Spider",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "Centipede",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Blob",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Flowerman",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Spring",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Jester",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Puffer",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Nutcracker",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Masked",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Butler",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Hoarding bug",
+        "value": {
+          "override": true,
+          "rarity": 56
+        }
+      },
+      {
+        "key": "Crawler",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "Walker",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Don't Touch Me",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Football",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Herobrine",
+        "value": {
+          "override": true,
+          "rarity": 20
+        }
+      },
+      {
+        "key": "Boomba",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Maggie",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Crystal Ray",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "The Fiend",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Locker",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "ImmortalSnail",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Cleaning Drone",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "Moving Turret",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "Shrimp",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Demogorgon",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "redGnome",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "blueGnome",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Shy guy",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Men-stalker",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "SlendermanEnemy",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Foxy",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Baboon hawk",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "BagpipeGhost",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Docile Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Earth Leviathan",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "EnforcerGhost",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "ForestGiant",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "HarpGhost",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Lasso",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Manticoil",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "MouthDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Peeper",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "RadMech",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Red Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Sentinel",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Tulip Snake",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Butler Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "SmallDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Freddles",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "NightmareFreddy",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "RollingGiant",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      }
+    ]
   },
   {
-    "key": "Centipede",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
+    "risk": "A-",
+    "data": [
+      {
+        "key": "Girl",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Bunker Spider",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Centipede",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Blob",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Flowerman",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Spring",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Jester",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Puffer",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Nutcracker",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Masked",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "Butler",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Hoarding bug",
+        "value": {
+          "override": true,
+          "rarity": 58
+        }
+      },
+      {
+        "key": "Crawler",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Walker",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Don't Touch Me",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Football",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Herobrine",
+        "value": {
+          "override": true,
+          "rarity": 22
+        }
+      },
+      {
+        "key": "Boomba",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Maggie",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Crystal Ray",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "The Fiend",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Locker",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "ImmortalSnail",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Cleaning Drone",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Moving Turret",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Shrimp",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Demogorgon",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "redGnome",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "blueGnome",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Shy guy",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Men-stalker",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "SlendermanEnemy",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Foxy",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Baboon hawk",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "BagpipeGhost",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Docile Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Earth Leviathan",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "EnforcerGhost",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "ForestGiant",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "HarpGhost",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "Lasso",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Manticoil",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "MouthDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Peeper",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "RadMech",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Red Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Sentinel",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Tulip Snake",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Butler Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "SmallDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Freddles",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "NightmareFreddy",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "RollingGiant",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      }
+    ]
   },
   {
-    "key": "Crawler",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
+    "risk": "A",
+    "data": [
+      {
+        "key": "Girl",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Bunker Spider",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Centipede",
+        "value": {
+          "override": true,
+          "rarity": 46
+        }
+      },
+      {
+        "key": "Blob",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Flowerman",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Spring",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Jester",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Puffer",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Nutcracker",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Masked",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Butler",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Hoarding bug",
+        "value": {
+          "override": true,
+          "rarity": 60
+        }
+      },
+      {
+        "key": "Crawler",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Walker",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Don't Touch Me",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Football",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Herobrine",
+        "value": {
+          "override": true,
+          "rarity": 24
+        }
+      },
+      {
+        "key": "Boomba",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "Maggie",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Crystal Ray",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "The Fiend",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Locker",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "ImmortalSnail",
+        "value": {
+          "override": true,
+          "rarity": 46
+        }
+      },
+      {
+        "key": "Cleaning Drone",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Moving Turret",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Shrimp",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Demogorgon",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "redGnome",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "blueGnome",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Shy guy",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Men-stalker",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "SlendermanEnemy",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Foxy",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Baboon hawk",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "BagpipeGhost",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "Docile Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Earth Leviathan",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "EnforcerGhost",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "ForestGiant",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "HarpGhost",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Lasso",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Manticoil",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "MouthDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Peeper",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "RadMech",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Red Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Sentinel",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Tulip Snake",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Butler Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "SmallDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Freddles",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "NightmareFreddy",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "RollingGiant",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      }
+    ]
   },
   {
-    "key": "Crystal Ray",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
+    "risk": "A+",
+    "data": [
+      {
+        "key": "Girl",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Bunker Spider",
+        "value": {
+          "override": true,
+          "rarity": 46
+        }
+      },
+      {
+        "key": "Centipede",
+        "value": {
+          "override": true,
+          "rarity": 48
+        }
+      },
+      {
+        "key": "Blob",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "Flowerman",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Spring",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Jester",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Puffer",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Nutcracker",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Masked",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Butler",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Hoarding bug",
+        "value": {
+          "override": true,
+          "rarity": 62
+        }
+      },
+      {
+        "key": "Crawler",
+        "value": {
+          "override": true,
+          "rarity": 46
+        }
+      },
+      {
+        "key": "Walker",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Don't Touch Me",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "Football",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Herobrine",
+        "value": {
+          "override": true,
+          "rarity": 26
+        }
+      },
+      {
+        "key": "Boomba",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Maggie",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Crystal Ray",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "The Fiend",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Locker",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "ImmortalSnail",
+        "value": {
+          "override": true,
+          "rarity": 48
+        }
+      },
+      {
+        "key": "Cleaning Drone",
+        "value": {
+          "override": true,
+          "rarity": 46
+        }
+      },
+      {
+        "key": "Moving Turret",
+        "value": {
+          "override": true,
+          "rarity": 46
+        }
+      },
+      {
+        "key": "Shrimp",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "Demogorgon",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "redGnome",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "blueGnome",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Shy guy",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Men-stalker",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "SlendermanEnemy",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Foxy",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Baboon hawk",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "BagpipeGhost",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Docile Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Earth Leviathan",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "EnforcerGhost",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "ForestGiant",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "HarpGhost",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Lasso",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Manticoil",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "MouthDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Peeper",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "RadMech",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Red Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Sentinel",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Tulip Snake",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Butler Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "SmallDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Freddles",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "NightmareFreddy",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "RollingGiant",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      }
+    ]
   },
   {
-    "key": "Demogorgon",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
+    "risk": "S-",
+    "data": [
+      {
+        "key": "Girl",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Bunker Spider",
+        "value": {
+          "override": true,
+          "rarity": 48
+        }
+      },
+      {
+        "key": "Centipede",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "Blob",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Flowerman",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Spring",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Jester",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Puffer",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Nutcracker",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Masked",
+        "value": {
+          "override": true,
+          "rarity": 46
+        }
+      },
+      {
+        "key": "Butler",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "Hoarding bug",
+        "value": {
+          "override": true,
+          "rarity": 64
+        }
+      },
+      {
+        "key": "Crawler",
+        "value": {
+          "override": true,
+          "rarity": 48
+        }
+      },
+      {
+        "key": "Walker",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Don't Touch Me",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Football",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Herobrine",
+        "value": {
+          "override": true,
+          "rarity": 28
+        }
+      },
+      {
+        "key": "Boomba",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Maggie",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "Crystal Ray",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "The Fiend",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Locker",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "ImmortalSnail",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "Cleaning Drone",
+        "value": {
+          "override": true,
+          "rarity": 48
+        }
+      },
+      {
+        "key": "Moving Turret",
+        "value": {
+          "override": true,
+          "rarity": 48
+        }
+      },
+      {
+        "key": "Shrimp",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Demogorgon",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "redGnome",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "blueGnome",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Shy guy",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "Men-stalker",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "SlendermanEnemy",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Foxy",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Baboon hawk",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "BagpipeGhost",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Docile Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Earth Leviathan",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "EnforcerGhost",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "ForestGiant",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "HarpGhost",
+        "value": {
+          "override": true,
+          "rarity": 46
+        }
+      },
+      {
+        "key": "Lasso",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Manticoil",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "MouthDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Peeper",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "RadMech",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Red Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Sentinel",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Tulip Snake",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Butler Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "SmallDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Freddles",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "NightmareFreddy",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "RollingGiant",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      }
+    ]
   },
   {
-    "key": "Don't Touch Me",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
+    "risk": "S",
+    "data": [
+      {
+        "key": "Girl",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Bunker Spider",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "Centipede",
+        "value": {
+          "override": true,
+          "rarity": 52
+        }
+      },
+      {
+        "key": "Blob",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Flowerman",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "Spring",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Jester",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Puffer",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Nutcracker",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Masked",
+        "value": {
+          "override": true,
+          "rarity": 48
+        }
+      },
+      {
+        "key": "Butler",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Hoarding bug",
+        "value": {
+          "override": true,
+          "rarity": 66
+        }
+      },
+      {
+        "key": "Crawler",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "Walker",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Don't Touch Me",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Football",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Herobrine",
+        "value": {
+          "override": true,
+          "rarity": 30
+        }
+      },
+      {
+        "key": "Boomba",
+        "value": {
+          "override": true,
+          "rarity": 46
+        }
+      },
+      {
+        "key": "Maggie",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Crystal Ray",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "The Fiend",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Locker",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "ImmortalSnail",
+        "value": {
+          "override": true,
+          "rarity": 52
+        }
+      },
+      {
+        "key": "Cleaning Drone",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "Moving Turret",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "Shrimp",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Demogorgon",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "redGnome",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "blueGnome",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Shy guy",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Men-stalker",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "SlendermanEnemy",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Foxy",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "Baboon hawk",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "BagpipeGhost",
+        "value": {
+          "override": true,
+          "rarity": 46
+        }
+      },
+      {
+        "key": "Docile Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Earth Leviathan",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "EnforcerGhost",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "ForestGiant",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "HarpGhost",
+        "value": {
+          "override": true,
+          "rarity": 48
+        }
+      },
+      {
+        "key": "Lasso",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Manticoil",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "MouthDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Peeper",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "RadMech",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Red Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Sentinel",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "Tulip Snake",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Butler Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "SmallDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Freddles",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "NightmareFreddy",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "RollingGiant",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      }
+    ]
   },
   {
-    "key": "Earth Leviathan",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
+    "risk": "S+",
+    "data": [
+      {
+        "key": "Girl",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Bunker Spider",
+        "value": {
+          "override": true,
+          "rarity": 52
+        }
+      },
+      {
+        "key": "Centipede",
+        "value": {
+          "override": true,
+          "rarity": 54
+        }
+      },
+      {
+        "key": "Blob",
+        "value": {
+          "override": true,
+          "rarity": 46
+        }
+      },
+      {
+        "key": "Flowerman",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Spring",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Jester",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Puffer",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Nutcracker",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Masked",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "Butler",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Hoarding bug",
+        "value": {
+          "override": true,
+          "rarity": 68
+        }
+      },
+      {
+        "key": "Crawler",
+        "value": {
+          "override": true,
+          "rarity": 52
+        }
+      },
+      {
+        "key": "Walker",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Don't Touch Me",
+        "value": {
+          "override": true,
+          "rarity": 46
+        }
+      },
+      {
+        "key": "Football",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Herobrine",
+        "value": {
+          "override": true,
+          "rarity": 32
+        }
+      },
+      {
+        "key": "Boomba",
+        "value": {
+          "override": true,
+          "rarity": 48
+        }
+      },
+      {
+        "key": "Maggie",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Crystal Ray",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "The Fiend",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Locker",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "ImmortalSnail",
+        "value": {
+          "override": true,
+          "rarity": 54
+        }
+      },
+      {
+        "key": "Cleaning Drone",
+        "value": {
+          "override": true,
+          "rarity": 52
+        }
+      },
+      {
+        "key": "Moving Turret",
+        "value": {
+          "override": true,
+          "rarity": 52
+        }
+      },
+      {
+        "key": "Shrimp",
+        "value": {
+          "override": true,
+          "rarity": 46
+        }
+      },
+      {
+        "key": "Demogorgon",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "redGnome",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "blueGnome",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "Shy guy",
+        "value": {
+          "override": true,
+          "rarity": 38
+        }
+      },
+      {
+        "key": "Men-stalker",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "SlendermanEnemy",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "Foxy",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Baboon hawk",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "BagpipeGhost",
+        "value": {
+          "override": true,
+          "rarity": 48
+        }
+      },
+      {
+        "key": "Docile Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Earth Leviathan",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "EnforcerGhost",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "ForestGiant",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "HarpGhost",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "Lasso",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Manticoil",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "MouthDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Peeper",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "RadMech",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Red Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Sentinel",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Tulip Snake",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Butler Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "SmallDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Freddles",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "NightmareFreddy",
+        "value": {
+          "override": true,
+          "rarity": 34
+        }
+      },
+      {
+        "key": "RollingGiant",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      }
+    ]
   },
   {
-    "key": "EnforcerGhost",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
+    "risk": "S++",
+    "data": [
+      {
+        "key": "Girl",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Bunker Spider",
+        "value": {
+          "override": true,
+          "rarity": 56
+        }
+      },
+      {
+        "key": "Centipede",
+        "value": {
+          "override": true,
+          "rarity": 58
+        }
+      },
+      {
+        "key": "Blob",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "Flowerman",
+        "value": {
+          "override": true,
+          "rarity": 46
+        }
+      },
+      {
+        "key": "Spring",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Jester",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Puffer",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Nutcracker",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Masked",
+        "value": {
+          "override": true,
+          "rarity": 54
+        }
+      },
+      {
+        "key": "Butler",
+        "value": {
+          "override": true,
+          "rarity": 48
+        }
+      },
+      {
+        "key": "Hoarding bug",
+        "value": {
+          "override": true,
+          "rarity": 72
+        }
+      },
+      {
+        "key": "Crawler",
+        "value": {
+          "override": true,
+          "rarity": 56
+        }
+      },
+      {
+        "key": "Walker",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Don't Touch Me",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "Football",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Herobrine",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "Boomba",
+        "value": {
+          "override": true,
+          "rarity": 52
+        }
+      },
+      {
+        "key": "Maggie",
+        "value": {
+          "override": true,
+          "rarity": 48
+        }
+      },
+      {
+        "key": "Crystal Ray",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "The Fiend",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Locker",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "ImmortalSnail",
+        "value": {
+          "override": true,
+          "rarity": 58
+        }
+      },
+      {
+        "key": "Cleaning Drone",
+        "value": {
+          "override": true,
+          "rarity": 56
+        }
+      },
+      {
+        "key": "Moving Turret",
+        "value": {
+          "override": true,
+          "rarity": 56
+        }
+      },
+      {
+        "key": "Shrimp",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "Demogorgon",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "redGnome",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "blueGnome",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Shy guy",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "Men-stalker",
+        "value": {
+          "override": true,
+          "rarity": 46
+        }
+      },
+      {
+        "key": "SlendermanEnemy",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Foxy",
+        "value": {
+          "override": true,
+          "rarity": 46
+        }
+      },
+      {
+        "key": "Baboon hawk",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "BagpipeGhost",
+        "value": {
+          "override": true,
+          "rarity": 52
+        }
+      },
+      {
+        "key": "Docile Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Earth Leviathan",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "EnforcerGhost",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "ForestGiant",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "HarpGhost",
+        "value": {
+          "override": true,
+          "rarity": 54
+        }
+      },
+      {
+        "key": "Lasso",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Manticoil",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "MouthDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Peeper",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "RadMech",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Red Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Sentinel",
+        "value": {
+          "override": true,
+          "rarity": 46
+        }
+      },
+      {
+        "key": "Tulip Snake",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Butler Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "SmallDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Freddles",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "NightmareFreddy",
+        "value": {
+          "override": true,
+          "rarity": 36
+        }
+      },
+      {
+        "key": "RollingGiant",
+        "value": {
+          "override": true,
+          "rarity": 46
+        }
+      }
+    ]
   },
   {
-    "key": "Flowerman",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
+    "risk": "SS",
+    "data": [
+      {
+        "key": "Girl",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Bunker Spider",
+        "value": {
+          "override": true,
+          "rarity": 64
+        }
+      },
+      {
+        "key": "Centipede",
+        "value": {
+          "override": true,
+          "rarity": 66
+        }
+      },
+      {
+        "key": "Blob",
+        "value": {
+          "override": true,
+          "rarity": 58
+        }
+      },
+      {
+        "key": "Flowerman",
+        "value": {
+          "override": true,
+          "rarity": 54
+        }
+      },
+      {
+        "key": "Spring",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "Jester",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Puffer",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "Nutcracker",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Masked",
+        "value": {
+          "override": true,
+          "rarity": 62
+        }
+      },
+      {
+        "key": "Butler",
+        "value": {
+          "override": true,
+          "rarity": 56
+        }
+      },
+      {
+        "key": "Hoarding bug",
+        "value": {
+          "override": true,
+          "rarity": 80
+        }
+      },
+      {
+        "key": "Crawler",
+        "value": {
+          "override": true,
+          "rarity": 64
+        }
+      },
+      {
+        "key": "Walker",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Don't Touch Me",
+        "value": {
+          "override": true,
+          "rarity": 58
+        }
+      },
+      {
+        "key": "Football",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Herobrine",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Boomba",
+        "value": {
+          "override": true,
+          "rarity": 60
+        }
+      },
+      {
+        "key": "Maggie",
+        "value": {
+          "override": true,
+          "rarity": 56
+        }
+      },
+      {
+        "key": "Crystal Ray",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "The Fiend",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "Locker",
+        "value": {
+          "override": true,
+          "rarity": 52
+        }
+      },
+      {
+        "key": "ImmortalSnail",
+        "value": {
+          "override": true,
+          "rarity": 66
+        }
+      },
+      {
+        "key": "Cleaning Drone",
+        "value": {
+          "override": true,
+          "rarity": 64
+        }
+      },
+      {
+        "key": "Moving Turret",
+        "value": {
+          "override": true,
+          "rarity": 64
+        }
+      },
+      {
+        "key": "Shrimp",
+        "value": {
+          "override": true,
+          "rarity": 58
+        }
+      },
+      {
+        "key": "Demogorgon",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "redGnome",
+        "value": {
+          "override": true,
+          "rarity": 52
+        }
+      },
+      {
+        "key": "blueGnome",
+        "value": {
+          "override": true,
+          "rarity": 52
+        }
+      },
+      {
+        "key": "Shy guy",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "Men-stalker",
+        "value": {
+          "override": true,
+          "rarity": 54
+        }
+      },
+      {
+        "key": "SlendermanEnemy",
+        "value": {
+          "override": true,
+          "rarity": 52
+        }
+      },
+      {
+        "key": "Foxy",
+        "value": {
+          "override": true,
+          "rarity": 54
+        }
+      },
+      {
+        "key": "Baboon hawk",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "BagpipeGhost",
+        "value": {
+          "override": true,
+          "rarity": 60
+        }
+      },
+      {
+        "key": "Docile Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Earth Leviathan",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "EnforcerGhost",
+        "value": {
+          "override": true,
+          "rarity": 52
+        }
+      },
+      {
+        "key": "ForestGiant",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "HarpGhost",
+        "value": {
+          "override": true,
+          "rarity": 62
+        }
+      },
+      {
+        "key": "Lasso",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Manticoil",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "MouthDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Peeper",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "RadMech",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Red Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Sentinel",
+        "value": {
+          "override": true,
+          "rarity": 54
+        }
+      },
+      {
+        "key": "Tulip Snake",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Butler Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "SmallDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Freddles",
+        "value": {
+          "override": true,
+          "rarity": 48
+        }
+      },
+      {
+        "key": "NightmareFreddy",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "RollingGiant",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      }
+    ]
   },
   {
-    "key": "Football",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
+    "risk": "P",
+    "data": [
+      {
+        "key": "Girl",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Bunker Spider",
+        "value": {
+          "override": true,
+          "rarity": 64
+        }
+      },
+      {
+        "key": "Centipede",
+        "value": {
+          "override": true,
+          "rarity": 66
+        }
+      },
+      {
+        "key": "Blob",
+        "value": {
+          "override": true,
+          "rarity": 58
+        }
+      },
+      {
+        "key": "Flowerman",
+        "value": {
+          "override": true,
+          "rarity": 54
+        }
+      },
+      {
+        "key": "Spring",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "Jester",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Puffer",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "Nutcracker",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Masked",
+        "value": {
+          "override": true,
+          "rarity": 62
+        }
+      },
+      {
+        "key": "Butler",
+        "value": {
+          "override": true,
+          "rarity": 56
+        }
+      },
+      {
+        "key": "Hoarding bug",
+        "value": {
+          "override": true,
+          "rarity": 80
+        }
+      },
+      {
+        "key": "Crawler",
+        "value": {
+          "override": true,
+          "rarity": 64
+        }
+      },
+      {
+        "key": "Walker",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Don't Touch Me",
+        "value": {
+          "override": true,
+          "rarity": 58
+        }
+      },
+      {
+        "key": "Football",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Herobrine",
+        "value": {
+          "override": true,
+          "rarity": 44
+        }
+      },
+      {
+        "key": "Boomba",
+        "value": {
+          "override": true,
+          "rarity": 60
+        }
+      },
+      {
+        "key": "Maggie",
+        "value": {
+          "override": true,
+          "rarity": 56
+        }
+      },
+      {
+        "key": "Crystal Ray",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "The Fiend",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "Locker",
+        "value": {
+          "override": true,
+          "rarity": 52
+        }
+      },
+      {
+        "key": "ImmortalSnail",
+        "value": {
+          "override": true,
+          "rarity": 66
+        }
+      },
+      {
+        "key": "Cleaning Drone",
+        "value": {
+          "override": true,
+          "rarity": 64
+        }
+      },
+      {
+        "key": "Moving Turret",
+        "value": {
+          "override": true,
+          "rarity": 64
+        }
+      },
+      {
+        "key": "Shrimp",
+        "value": {
+          "override": true,
+          "rarity": 58
+        }
+      },
+      {
+        "key": "Demogorgon",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "redGnome",
+        "value": {
+          "override": true,
+          "rarity": 52
+        }
+      },
+      {
+        "key": "blueGnome",
+        "value": {
+          "override": true,
+          "rarity": 52
+        }
+      },
+      {
+        "key": "Shy guy",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "Men-stalker",
+        "value": {
+          "override": true,
+          "rarity": 54
+        }
+      },
+      {
+        "key": "SlendermanEnemy",
+        "value": {
+          "override": true,
+          "rarity": 52
+        }
+      },
+      {
+        "key": "Foxy",
+        "value": {
+          "override": true,
+          "rarity": 54
+        }
+      },
+      {
+        "key": "Baboon hawk",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "BagpipeGhost",
+        "value": {
+          "override": true,
+          "rarity": 60
+        }
+      },
+      {
+        "key": "Docile Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Earth Leviathan",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "EnforcerGhost",
+        "value": {
+          "override": true,
+          "rarity": 52
+        }
+      },
+      {
+        "key": "ForestGiant",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "HarpGhost",
+        "value": {
+          "override": true,
+          "rarity": 62
+        }
+      },
+      {
+        "key": "Lasso",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Manticoil",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "MouthDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Peeper",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "RadMech",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Red Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Sentinel",
+        "value": {
+          "override": true,
+          "rarity": 54
+        }
+      },
+      {
+        "key": "Tulip Snake",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Butler Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "SmallDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Freddles",
+        "value": {
+          "override": true,
+          "rarity": 48
+        }
+      },
+      {
+        "key": "NightmareFreddy",
+        "value": {
+          "override": true,
+          "rarity": 40
+        }
+      },
+      {
+        "key": "RollingGiant",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      }
+    ]
   },
   {
-    "key": "ForestGiant",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "Foxy",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "Girl",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "HarpGhost",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "Herobrine",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "Hoarding bug",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "ImmortalSnail",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "Jester",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "Lasso",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "Locker",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "Maggie",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "Masked",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "MouthDog",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "Nutcracker",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "Peeper",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "Puffer",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "PufferHarloth",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "RadMech",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "Red Locust Bees",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "redGnome",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "RedWoodGiant",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "Shrimp",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "SlendermanEnemy",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "Spring",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "The Fiend",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "Tulip Snake",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "Walker",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "Shy guy",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
-  },
-  {
-    "key": "DriftWoodGiant",
-    "value": {
-      "override": false,
-      "rarity": 0
-    }
+    "risk": "Unknown",
+    "data": [
+      {
+        "key": "Girl",
+        "value": {
+          "override": true,
+          "rarity": 48
+        }
+      },
+      {
+        "key": "Bunker Spider",
+        "value": {
+          "override": true,
+          "rarity": 68
+        }
+      },
+      {
+        "key": "Centipede",
+        "value": {
+          "override": true,
+          "rarity": 70
+        }
+      },
+      {
+        "key": "Blob",
+        "value": {
+          "override": true,
+          "rarity": 62
+        }
+      },
+      {
+        "key": "Flowerman",
+        "value": {
+          "override": true,
+          "rarity": 58
+        }
+      },
+      {
+        "key": "Spring",
+        "value": {
+          "override": true,
+          "rarity": 54
+        }
+      },
+      {
+        "key": "Jester",
+        "value": {
+          "override": true,
+          "rarity": 48
+        }
+      },
+      {
+        "key": "Puffer",
+        "value": {
+          "override": true,
+          "rarity": 54
+        }
+      },
+      {
+        "key": "Nutcracker",
+        "value": {
+          "override": true,
+          "rarity": 48
+        }
+      },
+      {
+        "key": "Masked",
+        "value": {
+          "override": true,
+          "rarity": 66
+        }
+      },
+      {
+        "key": "Butler",
+        "value": {
+          "override": true,
+          "rarity": 60
+        }
+      },
+      {
+        "key": "Hoarding bug",
+        "value": {
+          "override": true,
+          "rarity": 84
+        }
+      },
+      {
+        "key": "Crawler",
+        "value": {
+          "override": true,
+          "rarity": 68
+        }
+      },
+      {
+        "key": "Walker",
+        "value": {
+          "override": true,
+          "rarity": 48
+        }
+      },
+      {
+        "key": "Don't Touch Me",
+        "value": {
+          "override": true,
+          "rarity": 62
+        }
+      },
+      {
+        "key": "Football",
+        "value": {
+          "override": true,
+          "rarity": 48
+        }
+      },
+      {
+        "key": "Herobrine",
+        "value": {
+          "override": true,
+          "rarity": 48
+        }
+      },
+      {
+        "key": "Boomba",
+        "value": {
+          "override": true,
+          "rarity": 64
+        }
+      },
+      {
+        "key": "Maggie",
+        "value": {
+          "override": true,
+          "rarity": 60
+        }
+      },
+      {
+        "key": "Crystal Ray",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "The Fiend",
+        "value": {
+          "override": true,
+          "rarity": 54
+        }
+      },
+      {
+        "key": "Locker",
+        "value": {
+          "override": true,
+          "rarity": 56
+        }
+      },
+      {
+        "key": "ImmortalSnail",
+        "value": {
+          "override": true,
+          "rarity": 70
+        }
+      },
+      {
+        "key": "Cleaning Drone",
+        "value": {
+          "override": true,
+          "rarity": 68
+        }
+      },
+      {
+        "key": "Moving Turret",
+        "value": {
+          "override": true,
+          "rarity": 68
+        }
+      },
+      {
+        "key": "Shrimp",
+        "value": {
+          "override": true,
+          "rarity": 62
+        }
+      },
+      {
+        "key": "Demogorgon",
+        "value": {
+          "override": true,
+          "rarity": 54
+        }
+      },
+      {
+        "key": "redGnome",
+        "value": {
+          "override": true,
+          "rarity": 56
+        }
+      },
+      {
+        "key": "blueGnome",
+        "value": {
+          "override": true,
+          "rarity": 56
+        }
+      },
+      {
+        "key": "Shy guy",
+        "value": {
+          "override": true,
+          "rarity": 54
+        }
+      },
+      {
+        "key": "Men-stalker",
+        "value": {
+          "override": true,
+          "rarity": 58
+        }
+      },
+      {
+        "key": "SlendermanEnemy",
+        "value": {
+          "override": true,
+          "rarity": 56
+        }
+      },
+      {
+        "key": "Foxy",
+        "value": {
+          "override": true,
+          "rarity": 58
+        }
+      },
+      {
+        "key": "Baboon hawk",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "BagpipeGhost",
+        "value": {
+          "override": true,
+          "rarity": 64
+        }
+      },
+      {
+        "key": "Docile Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Earth Leviathan",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "EnforcerGhost",
+        "value": {
+          "override": true,
+          "rarity": 56
+        }
+      },
+      {
+        "key": "ForestGiant",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "HarpGhost",
+        "value": {
+          "override": true,
+          "rarity": 66
+        }
+      },
+      {
+        "key": "Lasso",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Manticoil",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "MouthDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Peeper",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "RadMech",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Red Locust Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Sentinel",
+        "value": {
+          "override": true,
+          "rarity": 58
+        }
+      },
+      {
+        "key": "Tulip Snake",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Butler Bees",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "SmallDog",
+        "value": {
+          "override": true,
+          "rarity": 0
+        }
+      },
+      {
+        "key": "Freddles",
+        "value": {
+          "override": true,
+          "rarity": 50
+        }
+      },
+      {
+        "key": "NightmareFreddy",
+        "value": {
+          "override": true,
+          "rarity": 42
+        }
+      },
+      {
+        "key": "RollingGiant",
+        "value": {
+          "override": true,
+          "rarity": 52
+        }
+      }
+    ]
   }
 ]
