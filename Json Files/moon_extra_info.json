@@ -155,6 +155,39 @@
         },
         "StarlancerZero": {
             "risk": "Unknown"
+        },
+        "Affliction": {
+            "risk": "C"
+        },
+        "Aquatis": {
+            "risk": "D"
+        },
+        "EveM": {
+            "risk": "B"
+        },
+        "Ooblterra": {
+            "risk": "S++"
+        },
+        "Orion": {
+            "risk": "S+"
+        },
+        "Penumbra": {
+            "risk": "Unknown"
+        },
+        "Sector": {
+            "risk": "Unknown"
+        },
+        "Summit": {
+            "risk": "S"
+        },
+        "Synthesis": {
+            "risk": "S+"
+        },
+        "Tranquillity": {
+            "risk": "A+"
+        },
+        "Xen": {
+            "risk": "S"
         }
     }
 }
