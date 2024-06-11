@@ -45,7 +45,7 @@ def get_json_data(file):
                 print("Loaded data from ->{}<- successfully! ✅\n".format(file))
                 return data
             except json.JSONDecodeError as e:
-                print("Invalid Json file. Please check the file and try again.")
+                print("Invalid Json file: {}. Please check the file and try again.".format(file))
                 print(e)
                 input("Press Enter to exit...")
                 exit(0)
@@ -106,19 +106,25 @@ def get_moon_section_data(section, target_moon=""):
             return section_data
 
 
-def set_new_moon_section_data(section, target_moon, replacement_data):
+def set_new_moon_section_data(section, target_moon, replacement_data, risk_level, moon_count_replaced, moon_count):
     main_file = json_files["main"]
     # find the moon section data
-    for moon in moon_data:
-        if target_moon.lower() in moon["key"].lower():
-            moon["value"][section] = replacement_data
-            main_file["moons"]["moons"] = moon_data
-            # replace the main.json file with the new data
-            with open("{}/main.json".format(json_file_directory), "w") as f:
-                json.dump(main_file, f, indent=4)
-                f.close()
-                print("Updated data for moon ->{}<- in section ->{}<- successfully! ✅\n".format(target_moon, section))
-                return
+    with open("{}/main.json".format(json_file_directory), "w") as f:
+        for moon in moon_data:
+            if target_moon.lower() in moon["key"].lower():
+                moon["value"][section] = replacement_data
+                main_file["moons"]["moons"] = moon_data
+                print_successful_update_message(target_moon, section, risk_level, moon_count_replaced, moon_count)
+        # replace the main.json file with the new data
+        json.dump(main_file, f, indent=4)
+        f.close()
+
+
+def print_successful_update_message(target_moon, section, risk_level, moon_count_replaced, moon_count):
+    if risk_level is not None:
+        print("{:<25} {:<25} {:<40} {:<45}".format(target_moon, section, risk_level, "{}/{}".format(moon_count_replaced, moon_count)))
+    else:
+        print("{:<25} {:<5}".format(target_moon, section))
 
 
 def section_to_json_name(section):
@@ -290,19 +296,30 @@ def get_moon_risk(moon):
     return moon_extra_info_data["moons"][strip_to_alpha(moon_name)]["risk"]
 
 
-def update_moon_section(moon_name, moon_risk, section):
+def update_moon_section(moon_name, moon_risk, section, moon_count_replaced, moon_count):
     section_data = get_data_from_json_given_risk(moon_risk, section)
-    set_new_moon_section_data(section_words[section], moon_name, section_data)
+    set_new_moon_section_data(section_words[section], moon_name, section_data, moon_risk, moon_count_replaced, moon_count)
 
 
 def update_moon_data_by_risk(section_to_update):
     if section_to_update == "skip":
         return
+    print("{:<25} {:<25} {:<40} {:<45}\n".format("Moon", "Section", "Risk Level", "Moon Count Replaced/Total"))
     sections_to_update = ["inside", "outside", "daytime"] if section_to_update == "all" else [section_to_update]
+    moon_count_replaced = 0
+    moon_count = len(moon_data)
     for moon in moon_data:
+        touched_moon = False
         moon_risk = get_moon_risk(moon)
+        # If moon risk is company, skip the moon
+        if moon_risk == "Company":
+            print("{:<25} {:<5}".format(moon["key"], "Company - Skipped ❌"))
+            continue
         for section in sections_to_update:
-            update_moon_section(moon["key"], moon_risk, section)
+            if not touched_moon:
+                touched_moon = True
+                moon_count_replaced += 1
+            update_moon_section(moon["key"], moon_risk, section, moon_count_replaced, moon_count)
 
 
 def get_data_from_json_given_risk(risk, json_file):
@@ -321,8 +338,12 @@ def strip_to_alpha(input_string):
 
 def update_scrap_section_for_moons():
     target_section = "scrap"
+    count = len(moon_data)
+    update_count = 1
+    print("{:<25} {:<25} {:<40} {:<45}\n".format("Moon", "Section", "Risk Level", "Moon Count Replaced/Total"))
     for moon in moon_data:
-        set_new_moon_section_data(section_words[target_section], moon["key"], json_files[target_section])
+        set_new_moon_section_data(section_words[target_section], moon["key"], json_files[target_section], get_moon_risk(moon), update_count, count)
+        update_count += 1
 
 
 # main function
@@ -334,6 +355,7 @@ if __name__ == "__main__":
     print_list_of_moon_names()
 
     user_input_section_replacement = get_file_to_replace_input()
+
     update_moon_data_by_risk(user_input_section_replacement)
 
     user_input_update_scrap = get_user_input_for_scrap_update()
