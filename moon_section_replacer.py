@@ -1,33 +1,27 @@
 import json
 import time
 import re
-
-section_words = {
-    "scrap": "loot_table",
-    "outside": "outside_enemies",
-    "inside": "inside_enemies",
-    "daytime": "daytime_enemies"
-}
-
-json_file_names = {
-    "scrap": "scrap.json",
-    "outside": "outside.json",
-    "inside": "inside.json",
-    "daytime": "daytime.json",
-    "main": "main.json"
-}
+from Classes.ConfigSyncer import ConfigSyncer
+from Classes.UserActionGetter import UserAction
 
 json_files = {
 }
 
+main_file_scraps = []
+main_file_monsters = []
+user_file_scraps = []
+user_file_monsters = []
+main_file_scraps_not_in_user = set()
+main_file_monsters_not_in_user = set()
+user_file_scraps_not_in_main = set()
+user_file_monsters_not_in_main = set()
 # moon extra info
 moon_extra_info_file = "moon_extra_info.json"
-moon_risk_levels = ["D-", "D", "D+", "C-", "C", "C+", "B-", "B", "B+", "A-", "A", "A+", "S-", "S", "S+", "S++",
-                    "Unknown", "P", "Company"]
+moon_risk_levels = {"D-", "D", "D+", "C-", "C", "C+", "B-", "B", "B+", "A-", "A", "A+", "S-", "S", "S+", "S++",
+                    "Unknown", "P", "Company"}
 # multi moon replacement options
 multi_moon_replacement_options = ["all", "risk", "manual"]
 
-json_file_directory = "Json Files"
 
 # Moons available
 moon_data = {}
@@ -37,65 +31,7 @@ moon_names = list()
 moon_extra_info_data = {}
 
 
-def get_json_data(file):
-    try:
-        with open("{}/{}".format(json_file_directory, file), "r") as f:
-            try:
-                data = json.load(f)
-                print("Loaded data from ->{}<- successfully! ✅\n".format(file))
-                return data
-            except json.JSONDecodeError as e:
-                print("Invalid Json file: {}. Please check the file and try again.".format(file))
-                print(e)
-                input("Press Enter to exit...")
-                exit(0)
-            finally:
-                f.close()
-    except FileNotFoundError as e:
-        print("File: {} not found. Creating an empty file...".format(file))
-        try:
-            with open("{}/{}".format(json_file_directory, file), "w") as f:
-                json.dump({}, f, indent=4)
-                f.close()
-                input("Press Enter to acknowledge the file has been created and continue...This could break things.")
-                return {}
-        except Exception as e:
-            print("An error occurred while creating the file.")
-            print(e)
-            input("Press Enter to exit...")
-            exit(0)
 
-
-def set_moon_data(data):
-    global moon_data
-    if data is not None:
-        # if there is a key named "moons" in the main file
-        try:
-            if "moons" in data:
-                # set the data to global map
-                moon_data = data["moons"]["moons"]
-                set_valid_moon_names(moon_data)
-            else:
-                print("No moons found in main file. This is a required field.")
-                input("Press Enter to exit...")
-                exit(0)
-        except KeyError as e:
-            print("No moons found in main file. This is a required field.")
-            print(e)
-            input("Press Enter to exit...")
-            exit(0)
-    else:
-        print("No data found in main file. Please check the file and try again.")
-        input("Press Enter to exit...")
-        exit(0)
-
-
-def set_valid_moon_names(moons):
-    global moon_names
-    for moon in moons:
-        # Strip the key which contains the name of the moon of all numbers and only collect alpha characters
-        moon_names.append(''.join(filter(str.isalpha, moon["key"])))
-    moon_names.sort()
 
 
 def get_moon_section_data(section, target_moon=""):
@@ -122,7 +58,8 @@ def set_new_moon_section_data(section, target_moon, replacement_data, risk_level
 
 def print_successful_update_message(target_moon, section, risk_level, moon_count_replaced, moon_count):
     if risk_level is not None:
-        print("{:<25} {:<25} {:<40} {:<45}".format(target_moon, section, risk_level, "{}/{}".format(moon_count_replaced, moon_count)))
+        print("{:<25} {:<25} {:<40} {:<45}".format(target_moon, section, risk_level,
+                                                   "{}/{}".format(moon_count_replaced, moon_count)))
     else:
         print("{:<25} {:<5}".format(target_moon, section))
 
@@ -243,29 +180,7 @@ def get_valid_moon_name_from_user():
     return moon_name
 
 
-def update_moon_extra_info_data():
-    global moon_extra_info_data
-    moon_extra_info_data = get_json_data(moon_extra_info_file)
-    new_moon_detected = False
-    if not moon_extra_info_data:
-        moon_extra_info_data["moons"] = {}
-    for moon_name in moon_names:
-        # create a key in the data file
-        if moon_name not in moon_extra_info_data["moons"]:
-            print("Detected new moon! ->{}<- added to moon_extra_info.json!\n".format(moon_name))
-            new_moon_detected = True
-            moon_extra_info_data["moons"][moon_name] = dict(risk="")
-    with open("{}/{}".format(json_file_directory, moon_extra_info_file), "w") as f:
-        json.dump(moon_extra_info_data, f, indent=4)
-        f.close()
-    if not new_moon_detected:
-        print("No new moons detected in main.json. Moon extra info data in {} is up to date! ✅\n".format(
-            moon_extra_info_file))
-    else:
-        print("Make sure to update the risk levels for the new moons in {} before continuing.\n".format(
-            moon_extra_info_file))
-        input("Press Enter to continue...")
-        exit(0)
+
 
 
 def get_file_to_replace_input():
@@ -285,12 +200,6 @@ def get_user_input_for_scrap_update():
     return user_input
 
 
-def load_json_files():
-    for key, value in json_file_names.items():
-        time.sleep(0.5)
-        json_files[key] = get_json_data(value)
-
-
 def get_moon_risk(moon):
     moon_name = moon["key"]
     return moon_extra_info_data["moons"][strip_to_alpha(moon_name)]["risk"]
@@ -298,7 +207,8 @@ def get_moon_risk(moon):
 
 def update_moon_section(moon_name, moon_risk, section, moon_count_replaced, moon_count):
     section_data = get_data_from_json_given_risk(moon_risk, section)
-    set_new_moon_section_data(section_words[section], moon_name, section_data, moon_risk, moon_count_replaced, moon_count)
+    set_new_moon_section_data(section_words[section], moon_name, section_data, moon_risk, moon_count_replaced,
+                              moon_count)
 
 
 def update_moon_data_by_risk(section_to_update):
@@ -342,22 +252,71 @@ def update_scrap_section_for_moons():
     update_count = 1
     print("{:<25} {:<25} {:<40} {:<45}\n".format("Moon", "Section", "Risk Level", "Moon Count Replaced/Total"))
     for moon in moon_data:
-        set_new_moon_section_data(section_words[target_section], moon["key"], json_files[target_section], get_moon_risk(moon), update_count, count)
+        set_new_moon_section_data(section_words[target_section], moon["key"], json_files[target_section],
+                                  get_moon_risk(moon), update_count, count)
         update_count += 1
+
+
+def extract_scrap_data_from_main_file(main_file):
+    global main_file_scraps
+    for moon in main_file["moons"]["moons"]:
+        for scrap in moon["value"]["loot_table"]:
+            main_file_scraps.add(scrap["key"])
+    main_file_scraps = sorted(main_file_scraps)
+
+
+def extract_data_from_section(section):
+    return sorted(set(item["key"] for item in json_files[section]))
+
+
+def extract_user_file_data():
+    global user_file_monsters
+    global user_file_scraps
+
+    print("Extracting data from user files...\n")
+    user_file_scraps = extract_data_from_section("scrap")
+    user_file_monsters = sorted(list(
+        monster_name["key"] for section in ["inside", "outside", "daytime"] for monster in json_files[section] for
+        monster_name in monster["data"]))
+
+
+def update_scrap_json(list_of_missing_scraps):
+    entries = json_files["scrap"]
+    for scrap in list_of_missing_scraps:
+        entries.append({"key": scrap, "value": {
+            "override": True,
+            "rarity": 0,
+        }})
+        print("Added missing scrap ->{}<- to scrap.json!".format(scrap))
+    with open("{}/{}".format(json_file_directory, json_file_names["scrap"]), "w") as f:
+        json.dump(entries, f, indent=4)
+        f.close()
+
+
+def update_monster_jsons(list_of_missing_monsters):
+    risk_entries = {}
+    for section in ["inside", "outside", "daytime"]:
+        risk_entries = json_files[section]
+        for monster in list_of_missing_monsters:
+            for risk_entry in risk_entries:
+                risk_entry["data"].append({"key": monster, "value": {
+                    "override": True,
+                    "rarity": 0,
+                }})
+            print("Added missing monster ->{}<- to {}.json!".format(monster, section))
+    with open("{}/{}".format(json_file_directory, json_file_names[section]), "w") as f:
+        json.dump(risk_entries, f, indent=4)
+        f.close()
 
 
 # main function
 if __name__ == "__main__":
-    print("Loading Json Data...\n")
-    load_json_files()
-    set_moon_data(json_files["main"])
-    update_moon_extra_info_data()
-    print_list_of_moon_names()
+    config_syncer = ConfigSyncer()
+    user_action = UserAction()
+    user_action.get_user_action()
 
     user_input_section_replacement = get_file_to_replace_input()
-
     update_moon_data_by_risk(user_input_section_replacement)
-
     user_input_update_scrap = get_user_input_for_scrap_update()
 
     if user_input_update_scrap.lower() == "y":
