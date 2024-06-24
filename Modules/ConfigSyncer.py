@@ -31,6 +31,12 @@ class ConfigSyncer:
     def get_json_data(self, file_name):
         return self._json_data[file_name]
 
+    def get_all_json_data(self):
+        return self._json_data
+
+    def get_json_directory_name(self):
+        return self._json_file_directory_name
+
     def _load_files(self):
         self._log("Loading Json Data...\n")
         self._log("{:<20} {:<20}".format("File", "Loaded"))
