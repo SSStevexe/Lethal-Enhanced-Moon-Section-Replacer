@@ -7,7 +7,7 @@ import Modules.UserActionGetter as UserActionGetter
 if __name__ == "__main__":
     config_syncer = ConfigSyncer()
     section_replacer = SectionReplacer(config_syncer.get_all_json_data(), config_syncer.get_json_directory_name())
-    rarity_modifier = RarityModifier(config_syncer.get_all_json_data())
+    rarity_modifier = RarityModifier(config_syncer.get_all_json_data(), config_syncer.get_json_directory_name())
 
     # Get user input for action:
     user_choice: int = UserActionGetter.get_user_action()
@@ -16,4 +16,4 @@ if __name__ == "__main__":
     if user_choice == UserActionGetter.MainActions.REPLACE_SECTION.value:
         section_replacer.replacement()
     elif user_choice == UserActionGetter.MainActions.MODIFY_RARITIES.value:
-        pass
+        rarity_modifier.modify_rarities()
