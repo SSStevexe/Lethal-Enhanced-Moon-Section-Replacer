@@ -107,6 +107,9 @@ class SectionReplacer:
                     touched_moon = True
                     moon_count_replaced += 1
                 self._update_moon_section(moon["key"], moon_risk, section, moon_count_replaced, moon_count)
+        print("main.json updated successfully. ✅")
+        input("Press enter to exit...")
+        exit(0)
 
     def _get_moon_risk(self, moon) -> MoonRisk:
         moon_name = moon["key"]
