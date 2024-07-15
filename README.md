@@ -17,6 +17,9 @@ These specific sections are supported for this release:
 
  - Daytime - This will target the `daytime_enemies` section of the moon configuration file and replace with contents from `daytime.json`.
 
+
+ - Moon Travel Prices - This will target the `price` section of the moon configuration file and replace with contents from `options_by_risk.json`. More options will be supported here soon.
+
 ## How to use?
 
 1. Download the latest release from the Master branch.
