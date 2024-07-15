@@ -188,6 +188,39 @@
         },
         "Xen": {
             "risk": "S"
+        },
+        "Vertigo": {
+            "risk": "A"
+        },
+        "Corrosion": {
+            "risk": "A+"
+        },
+        "Arcadia": {
+            "risk": "S+"
+        },
+        "Collateral": {
+            "risk": "S+"
+        },
+        "Hydro": {
+            "risk": "S+"
+        },
+        "Icebound": {
+            "risk": "S+"
+        },
+        "Devastation": {
+            "risk": "S+"
+        },
+        "Submersion": {
+            "risk": "S+"
+        },
+        "EGypt": {
+            "risk": "S+"
+        },
+        "Temper": {
+            "risk": "S+"
+        },
+        "Kast": {
+            "risk": "S-"
         }
     }
 }
