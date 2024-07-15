@@ -1,0 +1,116 @@
+[
+    {
+        "risk": "D-",
+        "options": {
+            "price_to_travel": 0
+        }
+    },
+    {
+        "risk": "D",
+        "options": {
+            "price_to_travel": 0
+        }
+    },
+    {
+        "risk": "D+",
+        "options": {
+            "price_to_travel": 0
+        }
+    },
+    {
+        "risk": "C-",
+        "options": {
+            "price_to_travel": 0
+        }
+    },
+    {
+        "risk": "C",
+        "options": {
+            "price_to_travel": 0
+        }
+    },
+    {
+        "risk": "C+",
+        "options": {
+            "price_to_travel": 0
+        }
+    },
+    {
+        "risk": "B-",
+        "options": {
+            "price_to_travel": 0
+        }
+    },
+    {
+        "risk": "B",
+        "options": {
+            "price_to_travel": 0
+        }
+    },
+    {
+        "risk": "B+",
+        "options": {
+            "price_to_travel": 100
+        }
+    },
+    {
+        "risk": "A-",
+        "options": {
+            "price_to_travel": 300
+        }
+    },
+    {
+        "risk": "A",
+        "options": {
+            "price_to_travel": 400
+        }
+    },
+    {
+        "risk": "A+",
+        "options": {
+            "price_to_travel": 500
+        }
+    },
+    {
+        "risk": "S-",
+        "options": {
+            "price_to_travel": 600
+        }
+    },
+    {
+        "risk": "S",
+        "options": {
+            "price_to_travel": 700
+        }
+    },
+    {
+        "risk": "P",
+        "options": {
+            "price_to_travel": 800
+        }
+    },
+    {
+        "risk": "S+",
+        "options": {
+            "price_to_travel": 900
+        }
+    },
+    {
+        "risk": "S++",
+        "options": {
+            "price_to_travel": 1000
+        }
+    },
+    {
+        "risk": "SS",
+        "options": {
+            "price_to_travel": 1200
+        }
+    },
+    {
+        "risk": "Unknown",
+        "options": {
+            "price_to_travel": 1400
+        }
+    }
+]

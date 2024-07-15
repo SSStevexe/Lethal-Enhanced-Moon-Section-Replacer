@@ -4,7 +4,8 @@ from enum import Enum
 class MainActions(Enum):
     MODIFY_RARITIES = 1
     REPLACE_SECTION = 2
-    EXIT_SCRIPT = 3
+    MOON_PRICE_UPDATE = 3
+    EXIT_SCRIPT = 4
 
 
 class ScrapOrMonster(Enum):
@@ -21,7 +22,8 @@ def get_user_action() -> int:
     print("Select an action to perform:\n")
     print("1. Modify rarities for scraps or monsters in all moons.")
     print("2. Replace a section of moons by risk level")
-    print("3. Exit script")
+    print("3. Update moon prices")
+    print("4. Exit script")
 
     while True:
         user_input = input("Enter the number of the action you would like to perform: ")

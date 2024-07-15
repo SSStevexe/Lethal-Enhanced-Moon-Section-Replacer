@@ -13,7 +13,8 @@ class ConfigSyncer:
             "inside": "inside.json",
             "daytime": "daytime.json",
             "main": "main.json",
-            "extra": "moon_extra_info.json"
+            "extra": "moon_extra_info.json",
+            "options_by_risk": "options_by_risk.json"
         }
         self._json_data = {
             "scrap": {},
@@ -21,12 +22,19 @@ class ConfigSyncer:
             "inside": {},
             "daytime": {},
             "main": {},
-            "extra": {}
+            "extra": {},
+            "options_by_risk": {}
         }
+
+        self._risk_levels = {
+            "D-", "D", "D+", "C-", "C", "C+", "B-", "B", "B+", "A-", "A", "A+", "S", "S+", "S++", "P", "SS", "Unknown"
+        }
+
         self._load_files()
         self._update_moon_extra_info_data()
         self._remove_outdated_moon_extra_info_data()
         self._update_scrap_data()
+        self._validate_price_set_per_moon()
 
     def get_json_data(self, file_name):
         return self._json_data[file_name]
@@ -177,3 +185,37 @@ class ConfigSyncer:
 
     def _log(self, text):
         print("{}: {}".format(self._log_prefix, text))
+
+    def _validate_price_set_per_moon(self):
+        missing_risks = []
+        for risk in self._risk_levels:
+            if self._get_price_to_visit_moon(risk) is None:
+                missing_risks.append(risk)
+        if len(missing_risks) > 0:
+            self._add_missing_risks_to_options_by_risk(missing_risks)
+        else:
+            self._log("No missing risks in {}. ✅\n".format(self._json_file_names["options_by_risk"]))
+
+    def _get_price_to_visit_moon(self, risk):
+        for item in self._json_data["options_by_risk"]:
+            if item["risk"] == risk:
+                return item["options"]["price_to_travel"]
+        return None
+
+    def _add_missing_risks_to_options_by_risk(self, missing_risks):
+        new_risk = {
+            "risk": "",
+            "options": {
+                "price_to_travel": 0
+            }
+        }
+        self._log("Missing risks in options_by_risk.json: {}\n".format(missing_risks))
+        for risk in missing_risks:
+            new_risk["risk"] = risk
+            self._log("Adding ->{}<- to options_by_risk.json\n".format(risk))
+            self._json_data["options_by_risk"].append(new_risk)
+        self._write_to_file(self._json_data["options_by_risk"], "options_by_risk")
+        self._log("Make sure to update the price set for the new risks in {} before continuing.\n".format(
+            self._json_file_names["options_by_risk"]))
+        input("Press Enter to continue...")
+        exit(0)
