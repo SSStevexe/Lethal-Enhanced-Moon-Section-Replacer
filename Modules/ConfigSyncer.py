@@ -27,7 +27,7 @@ class ConfigSyncer:
         }
 
         self._risk_levels = {
-            "D-", "D", "D+", "C-", "C", "C+", "B-", "B", "B+", "A-", "A", "A+", "S", "S+", "S++", "P", "SS", "Unknown"
+            "D-", "D", "D+", "C-", "C", "C+", "B-", "B", "B+", "A-", "A", "A+", "S", "S+", "S++", "P", "SS", "Unknown", "Company"
         }
 
         self._load_files()

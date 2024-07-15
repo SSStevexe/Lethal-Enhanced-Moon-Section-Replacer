@@ -112,5 +112,11 @@
         "options": {
             "price_to_travel": 1400
         }
+    },
+    {
+        "risk": "Company",
+        "options": {
+            "price_to_travel": 0
+        }
     }
 ]
