@@ -40,5 +40,3 @@ class MoonPriceUpdater:
         with open("{}/{}".format(self._json_file_directory_name, "main.json"), "w") as f:
             json.dump(self._json_files["main"], f, indent=4)
         self._log("Json Data Written to main.json! ✅\n")
-        print("Press any key to exit...")
-        exit(0)
