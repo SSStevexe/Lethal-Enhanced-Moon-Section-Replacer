@@ -45,7 +45,7 @@
         "key": "Jar of pickles",
         "value": {
             "override": true,
-            "rarity": 4
+            "rarity": 12
         }
     },
     {
@@ -184,7 +184,7 @@
     {
         "key": "Tea kettle",
         "value": {
-            "override": false,
+            "override": true,
             "rarity": 25
         }
     },
@@ -927,84 +927,84 @@
         "key": "Wet Note 3",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Burnt Note 1",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Round Vile",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Bucket of Shards",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Accident Log 2",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Skull",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Undelivered Letter 2",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Lunatics Translations",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Wanderer Feed",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Wet Note 1",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Harrington Log 2",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Transcript 2",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
@@ -1018,21 +1018,21 @@
         "key": "Stapler",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Forgotten Log 3",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Battery",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
@@ -1046,273 +1046,273 @@
         "key": "giant poster",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Watching Petri Dish",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Ice Cube",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Experiment Log BIO HXNV7",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Nutcracker Eye",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Jewel Box",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Blood Petri Dish",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Accident Log 3",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Large Pot",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Harrington Log 1",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Petri Dish",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Alien Crate",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 6
         }
     },
     {
         "key": "Large Plant",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 14
         }
     },
     {
         "key": "Blue Test Tube",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 8
         }
     },
     {
         "key": "Typewriter",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Evil Cosmo",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Dying Cosmic Flashlight",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Oil Can",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Brain Jar",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Test Tube",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Syringe",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Silver Coin",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Flow Pipe",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Chainsaw",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Experiment Log Cursed Coin",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Porcelain Teacup",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Chems",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Possessed Walkie",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Fire Extinguisher",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Corner Pipe",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 18
         }
     },
     {
         "key": "Pickaxe",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Clam",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 8
         }
     },
     {
         "key": "Rose",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Ice Crystal",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 6
         }
     },
     {
         "key": "Construction Helmet",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Pot of Pots",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Cursed Coin",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Coil",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 6
         }
     },
     {
         "key": "Torch",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
@@ -1326,175 +1326,175 @@
         "key": "Forgotten Log 2",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Burnt Note 2",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Alien Corpse",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Heavy Potion",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Ritual Dagger",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Undelivered Letter 4",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Experiment Log Golden Dagger",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Gas Mask",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Oval Vile",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Silver Bug",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Morse Bleeper",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Blue Folder",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Harrington Log 3",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Test Tube Rack",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Bottle",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 20
         }
     },
     {
         "key": "Dynamite",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Cosmic Growth",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Old Pipe",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Lost Note 4",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Stick",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Experiment Log Hyper Acid",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Ribcage",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Desmonds Note 2",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Cosmic Flashlight",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 14
         }
     },
     {
         "key": "Robot Arm",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
@@ -1508,196 +1508,196 @@
         "key": "Transcript 4",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Light Potion",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 18
         }
     },
     {
         "key": "Security Camera",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Demon Candle",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 14
         }
     },
     {
         "key": "Horned Shell",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Tape Player Log 4",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Cursed Totem",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 18
         }
     },
     {
         "key": "Frog",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 8
         }
     },
     {
         "key": "Porcelain Perfume Bottle",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Gas Tank",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Book",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 40
         }
     },
     {
         "key": "Cosmic Shard",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Gloom Logging Poster",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Glasses",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Cosmochad",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Kitchen knife",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 8
         }
     },
     {
         "key": "Saw Blade",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Hand Crystal",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 16
         }
     },
     {
         "key": "Evil Cosmochad",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Old Computer",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Glass Eye",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 8
         }
     },
     {
         "key": "Microscope",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Syringe Gun",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Lava Crystal",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Epic Axe",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Chunk of Celestial Brain",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 8
         }
     },
     {
         "key": "Wanderer Corpse",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Concrete Block",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
@@ -1711,392 +1711,392 @@
         "key": "Wet Note 2",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Copper Gear",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Big Screw",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Burnt Note 3",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "The Plan 4",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Sprint Totem",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Wet Note 4",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Golden Skull",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Tape Player Log 2",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Jewel Case",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "BIO-HXNV7",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 6
         }
     },
     {
         "key": "Tape Player Protocol Wipeout",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Plastic Box",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Branch",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Hazmat Mask",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 18
         }
     },
     {
         "key": "Religious Artifact",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Undelivered Letter 1",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Bit coin",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Undelivered Letter 3",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Candle Holder",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 6
         }
     },
     {
         "key": "Trowel",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Accident Log 4",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Desmonds Note 1",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Circular Saw",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Big Nut",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Transcript 3",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Radioactive Rod",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Crankshaft",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 18
         }
     },
     {
         "key": "Marble",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Raven Skull",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Big Red Button",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 8
         }
     },
     {
         "key": "Amethyst Cluster",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Hand Drill",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 16
         }
     },
     {
         "key": "Toy Nutcracker",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "The Plan 2",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "The Plan 1",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Yellow Test Tube",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Rock",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Spotlight",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Desmonds Note 3",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Transcript 1",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Lost Note 2",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Silver Key",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Glowing Orb",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Oil Shale",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Red Folder",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Raw Gold",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Leviathan Tooth",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 16
         }
     },
     {
         "key": "Experiment Log Comedy Mask",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Generator",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Metal Detector",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 14
         }
     },
     {
         "key": "Tall Candlestick",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Iron Ingot",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 14
         }
     },
     {
         "key": "Oil Tank",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Diamond",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Lost Note 1",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
@@ -2110,245 +2110,245 @@
         "key": "Map of Cosmocos",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Porcelain Bottle",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Accident Log 1",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Turtle Shell",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Golden Mask",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 8
         }
     },
     {
         "key": "Pot",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Radioactive Barrel",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Oil Lantern",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Small Pipe",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Documents",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 18
         }
     },
     {
         "key": "Burnt Note 4",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Forgotten Log 1",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Square Vile",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Dead Ice Crystal",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 16
         }
     },
     {
         "key": "Geigercounter",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 14
         }
     },
     {
         "key": "Harrington Log 4",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Dying Grown Petri Dish",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Tobacco Pipe",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Camera",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 8
         }
     },
     {
         "key": "Recovered Secret Log",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Steel Gear",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Fish Bones",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Jar of Growth",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Grown Petri Dish",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Bronze Trophy",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Vase",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Tape Player Log 1",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Tape Player Log 3",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Oil Barrel",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Banana",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 20
         }
     },
     {
         "key": "Lil Cosmo",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Steel Ingot",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Picture Frame",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Sieve",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Crescent of Curses",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
@@ -2362,161 +2362,161 @@
         "key": "Lost Note 3",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "The Plan 3",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 4
         }
     },
     {
         "key": "Dying Cosmic Growth",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Green Test Tube",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 14
         }
     },
     {
         "key": "Iron Gear",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Red Test Tube",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Hoppy Hopscotch",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Catnap",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 8
         }
     },
     {
         "key": "Mommy Long Legs Box Damaged",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Bron Box Ruined",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Huggy Wuggy Box Empty",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 8
         }
     },
     {
         "key": "Candy Cat Box Damaged",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Bunzo Bunny Box Pristine",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 6
         }
     },
     {
         "key": "Golden Kissy Statue",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Bubba Bubbaphant",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "The Saint",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Nucleus",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Bron Pristine",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 8
         }
     },
     {
         "key": "Picky Piggy",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Cat Bee Box Empty",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Golden Hand Statue",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Boogie Bot Box Empty",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "The Gambler",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
@@ -2530,105 +2530,105 @@
         "key": "Bron Box Empty",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Playco Box Large",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Golden Bunzo Statue",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Craftycorn",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Huggy Wuggy Box Pristine",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 6
         }
     },
     {
         "key": "Golden PJ Statue",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Mommy Long Legs Box Ruined",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 8
         }
     },
     {
         "key": "Golden Claw Statue",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Golden Berry Statue",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Golden Train Statue",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "The Sacrificer",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "PJ Pug A Pillar Box Ruined",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Boogie Bot Box Ruined",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 8
         }
     },
     {
         "key": "PJ Pug A Pillar Box Empty",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Playco Box Medium",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
@@ -2642,63 +2642,63 @@
         "key": "Bunzo Bunny Box Empty",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 8
         }
     },
     {
         "key": "Candy Cat Box Empty",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Bobby Bearhug",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "PJ Pug A Pillar Pristine",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Mommy Long Legs Box Empty",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Bunzo Bunny Box Ruined",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 8
         }
     },
     {
         "key": "Cosmic Vessel",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Cat Bee Box Ruined",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 8
         }
     },
     {
         "key": "Snow Globe",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
@@ -2712,88 +2712,263 @@
         "key": "Golden Mommy Statue",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 6
         }
     },
     {
         "key": "Cat Bee Box Pristine",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Candy Cat Pristine",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 8
         }
     },
     {
         "key": "Golden Daisy Statue",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 12
         }
     },
     {
         "key": "Candy Cat Box Ruined",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Kickin Chicken",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 8
         }
     },
     {
         "key": "Candy Cat Box Pristine",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Boogie Bot Box Pristine",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Dogday",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Boogie Bot Pristine",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Bunzo Bunny Pristine",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 10
         }
     },
     {
         "key": "Boogie Bot Box Damaged",
         "value": {
             "override": true,
-            "rarity": 0
+            "rarity": 8
         }
     },
     {
         "key": "Playco Box Small",
+        "value": {
+            "override": true,
+            "rarity": 10
+        }
+    },
+    {
+        "key": "Bullet",
+        "value": {
+            "override": true,
+            "rarity": 60
+        }
+    },
+    {
+        "key": "SmallEyes",
+        "value": {
+            "override": true,
+            "rarity": 100
+        }
+    },
+    {
+        "key": "ImmersiveLantern",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "ImmersiveKeyboard",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "ImmersivePlant",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Blahuce",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "ImmersiveHammer",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Zed Dog",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Garbage lid",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Plastic cup",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Spiky Mace",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Meteorite",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Nature's Mace",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Toy train",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "ImmersiveBrick",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Icy Hammer",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "ImmersiveBaseball bat",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Control pad",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "ImmersiveSqueaky toy",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "ImmersiveFireaxe",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Toilet paper",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "ImmersiveFan",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "ImmersiveClock",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "ImmersiveAnvil",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Soccer ball",
         "value": {
             "override": true,
             "rarity": 0

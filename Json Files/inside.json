@@ -638,6 +638,20 @@
           "override": true,
           "rarity": 10
         }
+    },
+    {
+        "key": "BigEyes",
+        "value": {
+            "override": true,
+            "rarity": 10
+        }
+    },
+    {
+        "key": "BigMouth",
+        "value": {
+            "override": true,
+            "rarity": 10
+        }
       }
     ]
   },
@@ -1276,6 +1290,20 @@
     },
     {
         "key": "Wanderer",
+        "value": {
+            "override": true,
+            "rarity": 12
+        }
+    },
+    {
+        "key": "BigEyes",
+        "value": {
+            "override": true,
+            "rarity": 12
+        }
+    },
+    {
+        "key": "BigMouth",
         "value": {
             "override": true,
             "rarity": 12
@@ -1922,6 +1950,20 @@
             "override": true,
             "rarity": 14
         }
+    },
+    {
+        "key": "BigEyes",
+        "value": {
+            "override": true,
+            "rarity": 14
+        }
+    },
+    {
+        "key": "BigMouth",
+        "value": {
+            "override": true,
+            "rarity": 14
+        }
       }
     ]
   },
@@ -2560,6 +2602,20 @@
     },
     {
         "key": "Wanderer",
+        "value": {
+            "override": true,
+            "rarity": 16
+        }
+    },
+    {
+        "key": "BigEyes",
+        "value": {
+            "override": true,
+            "rarity": 16
+        }
+    },
+    {
+        "key": "BigMouth",
         "value": {
             "override": true,
             "rarity": 16
@@ -3206,6 +3262,20 @@
             "override": true,
             "rarity": 18
         }
+    },
+    {
+        "key": "BigEyes",
+        "value": {
+            "override": true,
+            "rarity": 18
+        }
+    },
+    {
+        "key": "BigMouth",
+        "value": {
+            "override": true,
+            "rarity": 18
+        }
       }
     ]
   },
@@ -3844,6 +3914,20 @@
     },
     {
         "key": "Wanderer",
+        "value": {
+            "override": true,
+            "rarity": 20
+        }
+    },
+    {
+        "key": "BigEyes",
+        "value": {
+            "override": true,
+            "rarity": 20
+        }
+    },
+    {
+        "key": "BigMouth",
         "value": {
             "override": true,
             "rarity": 20
@@ -4490,6 +4574,20 @@
             "override": true,
             "rarity": 22
         }
+    },
+    {
+        "key": "BigEyes",
+        "value": {
+            "override": true,
+            "rarity": 22
+        }
+    },
+    {
+        "key": "BigMouth",
+        "value": {
+            "override": true,
+            "rarity": 22
+        }
       }
     ]
   },
@@ -5128,6 +5226,20 @@
     },
     {
         "key": "Wanderer",
+        "value": {
+            "override": true,
+            "rarity": 24
+        }
+    },
+    {
+        "key": "BigEyes",
+        "value": {
+            "override": true,
+            "rarity": 24
+        }
+    },
+    {
+        "key": "BigMouth",
         "value": {
             "override": true,
             "rarity": 24
@@ -5774,6 +5886,20 @@
             "override": true,
             "rarity": 26
         }
+    },
+    {
+        "key": "BigEyes",
+        "value": {
+            "override": true,
+            "rarity": 26
+        }
+    },
+    {
+        "key": "BigMouth",
+        "value": {
+            "override": true,
+            "rarity": 26
+        }
       }
     ]
   },
@@ -6412,6 +6538,20 @@
     },
     {
         "key": "Wanderer",
+        "value": {
+            "override": true,
+            "rarity": 28
+        }
+    },
+    {
+        "key": "BigEyes",
+        "value": {
+            "override": true,
+            "rarity": 28
+        }
+    },
+    {
+        "key": "BigMouth",
         "value": {
             "override": true,
             "rarity": 28
@@ -7058,6 +7198,20 @@
             "override": true,
             "rarity": 30
         }
+    },
+    {
+        "key": "BigEyes",
+        "value": {
+            "override": true,
+            "rarity": 30
+        }
+    },
+    {
+        "key": "BigMouth",
+        "value": {
+            "override": true,
+            "rarity": 30
+        }
       }
     ]
   },
@@ -7696,6 +7850,20 @@
     },
     {
         "key": "Wanderer",
+        "value": {
+            "override": true,
+            "rarity": 32
+        }
+    },
+    {
+        "key": "BigEyes",
+        "value": {
+            "override": true,
+            "rarity": 32
+        }
+    },
+    {
+        "key": "BigMouth",
         "value": {
             "override": true,
             "rarity": 32
@@ -8342,6 +8510,20 @@
             "override": true,
             "rarity": 34
         }
+    },
+    {
+        "key": "BigEyes",
+        "value": {
+            "override": true,
+            "rarity": 34
+        }
+    },
+    {
+        "key": "BigMouth",
+        "value": {
+            "override": true,
+            "rarity": 34
+        }
       }
     ]
   },
@@ -8980,6 +9162,20 @@
     },
     {
         "key": "Wanderer",
+        "value": {
+            "override": true,
+            "rarity": 36
+        }
+    },
+    {
+        "key": "BigEyes",
+        "value": {
+            "override": true,
+            "rarity": 36
+        }
+    },
+    {
+        "key": "BigMouth",
         "value": {
             "override": true,
             "rarity": 36
@@ -9626,6 +9822,20 @@
             "override": true,
             "rarity": 38
         }
+    },
+    {
+        "key": "BigEyes",
+        "value": {
+            "override": true,
+            "rarity": 38
+        }
+    },
+    {
+        "key": "BigMouth",
+        "value": {
+            "override": true,
+            "rarity": 38
+        }
       }
     ]
   },
@@ -10264,6 +10474,20 @@
     },
     {
         "key": "Wanderer",
+        "value": {
+            "override": true,
+            "rarity": 40
+        }
+    },
+    {
+        "key": "BigEyes",
+        "value": {
+            "override": true,
+            "rarity": 40
+        }
+    },
+    {
+        "key": "BigMouth",
         "value": {
             "override": true,
             "rarity": 40
@@ -10910,6 +11134,20 @@
             "override": true,
             "rarity": 42
         }
+    },
+    {
+        "key": "BigEyes",
+        "value": {
+            "override": true,
+            "rarity": 42
+        }
+    },
+    {
+        "key": "BigMouth",
+        "value": {
+            "override": true,
+            "rarity": 42
+        }
       }
     ]
   },
@@ -11552,6 +11790,20 @@
             "override": true,
             "rarity": 44
         }
+    },
+    {
+        "key": "BigEyes",
+        "value": {
+            "override": true,
+            "rarity": 44
+        }
+    },
+    {
+        "key": "BigMouth",
+        "value": {
+            "override": true,
+            "rarity": 44
+        }
       }
     ]
   },
@@ -12190,6 +12442,20 @@
     },
     {
         "key": "Wanderer",
+        "value": {
+            "override": true,
+            "rarity": 46
+        }
+    },
+    {
+        "key": "BigEyes",
+        "value": {
+            "override": true,
+            "rarity": 46
+        }
+    },
+    {
+        "key": "BigMouth",
         "value": {
             "override": true,
             "rarity": 46

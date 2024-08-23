@@ -7,7 +7,7 @@
             "risk": "B"
         },
         "Argent": {
-            "risk": "A+"
+            "risk": "S-"
         },
         "Assurance": {
             "risk": "D"
@@ -16,7 +16,7 @@
             "risk": "B"
         },
         "AtlasAbyss": {
-            "risk": "B+"
+            "risk": "B"
         },
         "Auralis": {
             "risk": "S++"
@@ -25,13 +25,13 @@
             "risk": "C"
         },
         "BlackMesa": {
-            "risk": "S+"
+            "risk": "A+"
         },
         "Bozoros": {
-            "risk": "A-"
+            "risk": "A"
         },
         "CaltPrime": {
-            "risk": "S"
+            "risk": "S-"
         },
         "Celest": {
             "risk": "B"
@@ -40,7 +40,7 @@
             "risk": "S+"
         },
         "Crystallum": {
-            "risk": "D+"
+            "risk": "C-"
         },
         "Dine": {
             "risk": "S"
@@ -49,16 +49,16 @@
             "risk": "B"
         },
         "EchoReach": {
-            "risk": "C+"
+            "risk": "C-"
         },
         "PsychSanctum": {
-            "risk": "A-"
+            "risk": "B+"
         },
         "Rend": {
             "risk": "A"
         },
         "Sierra": {
-            "risk": "A-"
+            "risk": "A+"
         },
         "Solace": {
             "risk": "B"
@@ -76,13 +76,13 @@
             "risk": "C"
         },
         "Zenit": {
-            "risk": "B"
+            "risk": "C+"
         },
         "Experimentation": {
             "risk": "B"
         },
         "Fray": {
-            "risk": "A+"
+            "risk": "S"
         },
         "Harloth": {
             "risk": "S+"
@@ -94,7 +94,7 @@
             "risk": "D"
         },
         "Nimbus": {
-            "risk": "B"
+            "risk": "C+"
         },
         "Offense": {
             "risk": "B"
@@ -109,7 +109,7 @@
             "risk": "D+"
         },
         "Sanguine": {
-            "risk": "A"
+            "risk": "A-"
         },
         "Artifice": {
             "risk": "S++"
@@ -121,7 +121,7 @@
             "risk": "Unknown"
         },
         "Desolation": {
-            "risk": "A"
+            "risk": "A+"
         },
         "Embrion": {
             "risk": "S"
@@ -190,37 +190,43 @@
             "risk": "S"
         },
         "Vertigo": {
-            "risk": "A"
+            "risk": "A-"
         },
         "Corrosion": {
-            "risk": "A+"
+            "risk": "A-"
         },
         "Arcadia": {
-            "risk": "S+"
+            "risk": "B+"
         },
         "Collateral": {
-            "risk": "S+"
+            "risk": "D"
         },
         "Hydro": {
-            "risk": "S+"
+            "risk": "C"
         },
         "Icebound": {
-            "risk": "S+"
+            "risk": "C-"
         },
         "Devastation": {
             "risk": "S+"
         },
         "Submersion": {
-            "risk": "S+"
+            "risk": "B"
         },
         "EGypt": {
-            "risk": "S+"
+            "risk": "B"
         },
         "Temper": {
-            "risk": "S+"
+            "risk": "S"
         },
         "Kast": {
-            "risk": "S-"
+            "risk": "B+"
+        },
+        "Derelict": {
+            "risk": "C"
+        },
+        "Cambrian": {
+            "risk": "A"
         }
     }
 }
