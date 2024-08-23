@@ -36,6 +36,7 @@ OR
 - All moons are supported in a single run.
 - Detection of new moons in `main.json` and auto updating `moon_extra_info.json` if new moons are detected.
 - Error resistance for missing moons, invalid JSON files, missing risk levels, and more.
+- Synchronizes JSON data between the main Lethal Company Config file, main.json and the provided JSON files.
 
 ## Command used with PyInstaller
 `pyinstaller --onefile --name Lethal_Enhanced_Text_Replacer --icon=.\PyInstaller/discord-avatar-512-1VMJP.ico --upx-dir="C:\Program Files\upx-4.2.4-win64" .\moon_section_replacer.py`
@@ -43,32 +44,44 @@ OR
 ## Example Run
 
 ```text
-ConfigSyncer: : Loading Json Data...
+ConfigSyncer:  Loading Json Data...
 
-ConfigSyncer: : File                 Loaded              
-ConfigSyncer: : scrap.json           ✅                   
-ConfigSyncer: : outside.json         ✅                   
-ConfigSyncer: : inside.json          ✅                   
-ConfigSyncer: : daytime.json         ✅                   
-ConfigSyncer: : main.json            ✅                   
-ConfigSyncer: : moon_extra_info.json ✅                   
-ConfigSyncer: : Json Data Loaded ✅
+ConfigSyncer:  File                 Loaded              
+ConfigSyncer:  scrap.json           ✅                   
+ConfigSyncer:  outside.json         ✅                   
+ConfigSyncer:  inside.json          ✅                   
+ConfigSyncer:  daytime.json         ✅                   
+ConfigSyncer:  main.json            ✅                   
+ConfigSyncer:  moon_extra_info.json ✅                   
+ConfigSyncer:  options_by_risk.json ✅                   
+ConfigSyncer:  Json Data Loaded ✅
 
-ConfigSyncer: : Syncing moon data...
+ConfigSyncer:  Checking all json files do not contain empty rarity values...
 
-ConfigSyncer: : No missing moons in moon_extra_info.json. ✅
+ConfigSyncer:  All json files do not contain empty rarity values. ✅
 
-ConfigSyncer: : No outdated moons in moon_extra_info.json. ✅
+ConfigSyncer:  Syncing moon data...
 
-ConfigSyncer: : Syncing main.json and scrap.json
+ConfigSyncer:  No missing moons in moon_extra_info.json. ✅
 
-ConfigSyncer: : Scrap data synced ✅
+ConfigSyncer:  No outdated moons in moon_extra_info.json. ✅
+
+ConfigSyncer:  Syncing monsters available in main.json and adding if necessary to inside.json and outside.json
+
+ConfigSyncer:  Unique monsters detected in main.json: 102.
+ConfigSyncer:  Unique monsters detected in outside.json and inside.json: 102.
+ConfigSyncer:  Syncing main.json and scrap.json
+
+ConfigSyncer:  Scrap data synced ✅
+
+ConfigSyncer:  No missing risks in options_by_risk.json. ✅
 
 Select an action to perform:
 
 1. Modify rarities for scraps or monsters in all moons.
 2. Replace a section of moons by risk level
-3. Exit script
+3. Update moon prices
+4. Exit script
 Enter the number of the action you would like to perform: 2
 
 Select which section of moons to replace by their associated risk: ['outside', 'inside', 'daytime', 'scrap', 'all']

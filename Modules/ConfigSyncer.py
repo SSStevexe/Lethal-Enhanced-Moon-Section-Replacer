@@ -31,8 +31,10 @@ class ConfigSyncer:
         }
 
         self._load_files()
+        self._check_all_json_do_not_contain_empty_rarity()
         self._update_moon_extra_info_data()
         self._remove_outdated_moon_extra_info_data()
+        self._sync_monsters_available()
         self._update_scrap_data()
         self._validate_price_set_per_moon()
 
@@ -88,16 +90,16 @@ class ConfigSyncer:
         extra_info_moon_names = self._get_extra_info_moon_names()
         missing_moons = set(main_moon_names) - set(extra_info_moon_names)
         if len(missing_moons) > 0:
-            self._log("Missing moons in moon_extra_info.json: {}\n".format(missing_moons))
+            self._log("Missing moons in moon_extra_info.json: {} - ❌\n".format(missing_moons))
             for moon_name in missing_moons:
                 self._log("Adding ->{}<- to moon_extra_info.json\n".format(moon_name))
                 self._json_data["extra"]["moons"][moon_name] = dict(risk="")
-                self._write_to_file(self._json_data["extra"], "extra")
-                self._log(
-                    "Make sure to update the risk levels for the new moons in {} before continuing.\n".format(
-                        self._json_file_names["extra"]))
-                input("Press Enter to continue...")
-                exit(0)
+            self._write_to_file(self._json_data["extra"], "extra")
+            self._log(
+                "Make sure to update the risk levels for the new moons in {} before continuing.\n".format(
+                    self._json_file_names["extra"]))
+            input("Press Enter to continue...")
+            exit(0)
         else:
             self._log("No missing moons in {}. ✅\n".format(self._json_file_names["extra"]))
 
@@ -169,7 +171,7 @@ class ConfigSyncer:
         self._log("Missing scraps in scraps.json: {}\n".format(missing_scraps))
         for scrap in missing_scraps:
             self._log("Adding ->{}<- to scraps.json\n".format(scrap))
-            self._json_data["scrap"].append(dict(key=scrap, value=dict(override=True, rarity=0)))
+            self._json_data["scrap"].append(dict(key=scrap, value=dict(override=True, rarity="")))
             self._write_to_file(self._json_data["scrap"], "scrap")
         self._log("Make sure to update the rarity levels for the new scraps in {} before continuing.\n".format(
             self._json_file_names["scrap"]))
@@ -184,7 +186,7 @@ class ConfigSyncer:
         self._log("Removed from scraps.json ✅\n")
 
     def _log(self, text):
-        print("{}: {}".format(self._log_prefix, text))
+        print("{} {}".format(self._log_prefix, text))
 
     def _validate_price_set_per_moon(self):
         missing_risks = []
@@ -219,3 +221,89 @@ class ConfigSyncer:
             self._json_file_names["options_by_risk"]))
         input("Press Enter to continue...")
         exit(0)
+
+    def _sync_monsters_available(self):
+        self._log("Syncing monsters available in {} and adding if necessary to {} and {}\n".format(
+            self._json_file_names["main"],
+                 self._json_file_names["inside"], self._json_file_names["outside"]))
+
+        # Gather all monster names available in main.json
+        main_monster_names: set = self._get_unique_monster_names_in_main()
+        # Gather all monster names available in both outside.json and inside.json
+        inside_outside_monster_names: set = self._get_unique_monster_names_in_outside_and_inside()
+        # Compare the two sets and add missing monsters to outside.json and inside.json
+        missing_monsters = main_monster_names - inside_outside_monster_names
+        if len(missing_monsters) > 0:
+            self._add_monsters_to_inside_and_outside_json(list(missing_monsters))
+
+
+    def _get_unique_monster_names_in_main(self) -> set:
+        unique_monster_names  = set()
+        for moon in self._json_data["main"]["moons"]["moons"]:
+            moon_content = moon['value']
+            combined_monsters = moon_content['outside_enemies'] + moon_content['inside_enemies']
+            combined_monster_names = list()
+            for monster in combined_monsters:
+                combined_monster_names.append(monster['key'])
+            unique_monster_names.update(combined_monster_names)
+            self._log("Unique monsters detected in main.json: {}.".format(unique_monster_names.__len__()))
+            return unique_monster_names
+
+    def _get_unique_monster_names_in_outside_and_inside(self) -> set:
+        unique_monster_names = set()
+        inside_outside_combined = self._json_data['inside'] + self._json_data['outside']
+        for item in inside_outside_combined:
+            for data in item['data']:
+                unique_monster_names.add(data['key'])
+        self._log("Unique monsters detected in outside.json and inside.json: {}.".format(unique_monster_names.__len__()))
+        return unique_monster_names
+
+    def _add_monsters_to_inside_and_outside_json(self, missing_monsters: list):
+        self._log("Missing monsters in outside.json and inside.json: {}\n".format(missing_monsters))
+        for monster in missing_monsters:
+            self._log("Adding ->{}<- to outside.json and inside.json\n".format(monster))
+            for risk_entry_inside, risk_entry_outside in zip(self._json_data["outside"], self._json_data["inside"]):
+                risk_entry_inside["data"].append({"key": monster, "value": {"override": True, "rarity": ""}})
+                risk_entry_outside["data"].append({"key": monster, "value": {"override": True, "rarity": ""}})
+        self._write_to_file(self._json_data["outside"], "outside")
+        self._write_to_file(self._json_data["inside"], "inside")
+        self._log("Make sure to update the rarity levels for the new monsters in {} and {} before continuing.\n".format(
+            self._json_file_names["outside"], self._json_file_names["inside"]))
+        input("Press Enter to continue...")
+        exit(0)
+
+    def _check_all_json_do_not_contain_empty_rarity(self):
+        def check_empty_rarity(items, file_name):
+            for item in items:
+                if item["value"]["rarity"] == "":
+                    self._log(f"{file_name} contains empty rarity values. First triggered entry: {item['key']} - ❌")
+                    input("Press Enter to exit...")
+                    exit(0)
+
+        self._log("Checking all json files do not contain empty rarity values...\n")
+
+        for moon_name, risk in self._json_data["extra"]["moons"].items():
+            if risk["risk"] == "":
+                self._log(f"moon_extra_info.json contains empty rarity values. First triggered entry: {moon_name} - ❌")
+                input("Press Enter to exit...")
+                exit(0)
+
+        for option in self._json_data["options_by_risk"]:
+            if option["options"]["price_to_travel"] == "":
+                self._log(f"options_by_risk.json contains empty rarity values. First triggered entry: {option['risk']} - ❌")
+                input("Press Enter to exit...")
+                exit(0)
+
+        check_empty_rarity(self._json_data["scrap"], "Scrap.json")
+
+        for outside in self._json_data["outside"]:
+            check_empty_rarity(outside["data"], "Outside.json")
+
+        for inside in self._json_data["inside"]:
+            check_empty_rarity(inside["data"], "Inside.json")
+
+        for daytime in self._json_data["daytime"]:
+            check_empty_rarity(daytime["data"], "Daytime.json")
+
+        self._log("All json files do not contain empty rarity values. ✅\n")
+
