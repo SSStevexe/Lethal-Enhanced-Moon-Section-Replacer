@@ -1,5 +1,6 @@
 import json
 import time
+from Modules.Settings import Settings
 
 
 class ConfigSyncer:
@@ -30,6 +31,7 @@ class ConfigSyncer:
             "D-", "D", "D+", "C-", "C", "C+", "B-", "B", "B+", "A-", "A", "A+", "S", "S+", "S++", "P", "SS", "Unknown", "Company"
         }
 
+        self._settings_reader = Settings()
         self._load_files()
         self._check_all_json_do_not_contain_empty_rarity()
         self._update_moon_extra_info_data()
@@ -232,9 +234,34 @@ class ConfigSyncer:
         # Gather all monster names available in both outside.json and inside.json
         inside_outside_monster_names: set = self._get_unique_monster_names_in_outside_and_inside()
         # Compare the two sets and add missing monsters to outside.json and inside.json
-        missing_monsters = main_monster_names - inside_outside_monster_names
-        if len(missing_monsters) > 0:
-            self._add_monsters_to_inside_and_outside_json(list(missing_monsters))
+        missing_monsters_inside_outside = main_monster_names - inside_outside_monster_names
+        if len(missing_monsters_inside_outside) > 0:
+            self._add_monsters_to_inside_and_outside_json(list(missing_monsters_inside_outside))
+            return
+        no_longer_used_monsters = inside_outside_monster_names - main_monster_names
+        if len(no_longer_used_monsters) > 0:
+            self._log("Monsters in {} and {} not in {}: {}\n".format(self._json_file_names["inside"],
+                                                                      self._json_file_names["outside"],
+                                                                      self._json_file_names["main"],
+                                                                      no_longer_used_monsters))
+            self._log("Removing monsters from {} and {}\n".format(self._json_file_names["inside"],
+                                                                  self._json_file_names["outside"]))
+            self._remove_monsters_from_inside_and_outside_json(list(no_longer_used_monsters))
+
+    def _remove_monsters_from_inside_and_outside_json(self, no_longer_used_monsters: list):
+        skip_outside = self._settings_reader.get_setting(Settings.Section.SCRIPT_BEHAVIOR, Settings.ScriptBehavior.IGNORE_OUTSIDE)
+        for monster in no_longer_used_monsters:
+            self._log("Removing ->{}<- from outside.json and inside.json\n".format(monster))
+            for risk_entry_inside, risk_entry_outside in zip(self._json_data["outside"], self._json_data["inside"]):
+                risk_entry_inside["data"] = [x for x in risk_entry_inside["data"] if x["key"] != monster]
+                if not skip_outside:
+                 risk_entry_outside["data"] = [x for x in risk_entry_outside["data"] if x["key"] != monster]
+        if not skip_outside:
+            self._write_to_file(self._json_data["outside"], "outside")
+        self._write_to_file(self._json_data["inside"], "inside")
+        if skip_outside:
+            self._log("Not modifying outside.json as per settings.")
+        self._log("Monsters removed from {} and {}".format(self._json_file_names["inside"], self._json_file_names["outside"]) )
 
 
     def _get_unique_monster_names_in_main(self) -> set:
@@ -259,20 +286,31 @@ class ConfigSyncer:
         return unique_monster_names
 
     def _add_monsters_to_inside_and_outside_json(self, missing_monsters: list):
+        skip_outside = self._settings_reader.get_setting(Settings.Section.SCRIPT_BEHAVIOR, Settings.ScriptBehavior.IGNORE_OUTSIDE)
         self._log("Missing monsters in outside.json and inside.json: {}\n".format(missing_monsters))
         for monster in missing_monsters:
-            self._log("Adding ->{}<- to outside.json and inside.json\n".format(monster))
+            if skip_outside:
+                self._log("Adding ->{}<- to inside.json\n".format(monster))
+            else:
+                self._log("Adding ->{}<- to outside.json and inside.json\n".format(monster))
             for risk_entry_inside, risk_entry_outside in zip(self._json_data["outside"], self._json_data["inside"]):
                 risk_entry_inside["data"].append({"key": monster, "value": {"override": True, "rarity": ""}})
-                risk_entry_outside["data"].append({"key": monster, "value": {"override": True, "rarity": ""}})
-        self._write_to_file(self._json_data["outside"], "outside")
+                if not skip_outside:
+                    risk_entry_outside["data"].append({"key": monster, "value": {"override": True, "rarity": ""}})
+        if not skip_outside:
+             self._write_to_file(self._json_data["outside"], "outside")
+             self._log("Not modifying outside.json as per settings.")
         self._write_to_file(self._json_data["inside"], "inside")
-        self._log("Make sure to update the rarity levels for the new monsters in {} and {} before continuing.\n".format(
-            self._json_file_names["outside"], self._json_file_names["inside"]))
+        if skip_outside:
+            self._log("Make sure to update the rarity levels for the new monsters in {} before continuing.\n".format(self._json_file_names["inside"]))
+        else:
+            self._log("Make sure to update the rarity levels for the new monsters in {} and {} before continuing.\n".format(
+                self._json_file_names["outside"], self._json_file_names["inside"]))
         input("Press Enter to continue...")
         exit(0)
 
     def _check_all_json_do_not_contain_empty_rarity(self):
+        skip_outside = self._settings_reader.get_setting(Settings.Section.SCRIPT_BEHAVIOR, Settings.ScriptBehavior.IGNORE_OUTSIDE)
         def check_empty_rarity(items, file_name):
             for item in items:
                 if item["value"]["rarity"] == "":
@@ -296,14 +334,15 @@ class ConfigSyncer:
 
         check_empty_rarity(self._json_data["scrap"], "Scrap.json")
 
-        for outside in self._json_data["outside"]:
-            check_empty_rarity(outside["data"], "Outside.json")
+        json_file_tokens = ["outside", "inside", "daytime"]
 
-        for inside in self._json_data["inside"]:
-            check_empty_rarity(inside["data"], "Inside.json")
+        if skip_outside is True:
+            json_file_tokens.remove("outside")
+            self._log("Ignoring outside.json as per settings.")
 
-        for daytime in self._json_data["daytime"]:
-            check_empty_rarity(daytime["data"], "Daytime.json")
+        for token in json_file_tokens:
+            for json_file in self._json_data[token]:
+                check_empty_rarity(json_file["data"], f"{token.capitalize()}.json")
 
         self._log("All json files do not contain empty rarity values. ✅\n")
 

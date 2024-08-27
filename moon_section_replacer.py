@@ -3,9 +3,9 @@ from Modules.MoonPriceUpdater import MoonPriceUpdater
 from Modules.RarityModifier import RarityModifier
 from Modules.SectionReplacer import SectionReplacer
 import Modules.UserActionGetter as UserActionGetter
-
 # main function
 if __name__ == "__main__":
+    # Initialize classes
     config_syncer = ConfigSyncer()
     json_data = config_syncer.get_all_json_data()
     directory_name = config_syncer.get_json_directory_name()
