@@ -3,6 +3,8 @@ from enum import Enum
 import re
 
 from Modules import UserActionGetter
+from Modules.ConfigSyncer import ConfigSyncer
+from Modules.Settings import Settings
 
 
 def print_successful_update_message(target_moon, section, risk_level, moon_count_replaced, moon_count):
@@ -51,6 +53,7 @@ class SectionReplacer:
     def __init__(self, json_data, json_directory_name):
         self._json_data = json_data
         self._json_directory_name = json_directory_name
+        self._settings = Settings()
 
     def replacement(self):
         section_to_replace = self._get_file_to_replace_input()
@@ -80,6 +83,8 @@ class SectionReplacer:
     def _get_file_to_replace_input(self) -> Section:
         user_choice = ""
         valid_choices = [section.lower() for section in self.Section.__members__]
+        if self._settings.get_setting_value(Settings.ScriptBehavior.SettingName.IGNORE_OUTSIDE) is True:
+            valid_choices.remove(self.Section.OUTSIDE.value)
         while user_choice not in valid_choices:
             user_choice = input("\nSelect which section of moons to replace by their associated risk: {}\n".format(
                 valid_choices))
@@ -92,6 +97,8 @@ class SectionReplacer:
         sections_to_update = [self.Section.INSIDE, self.Section.OUTSIDE,
                               self.Section.INSIDE.DAYTIME] if section_to_update == self.Section.ALL else [
             section_to_update]
+        if self._settings.get_setting_value(Settings.ScriptBehavior.SettingName.IGNORE_OUTSIDE) is True:
+            sections_to_update.remove(self.Section.OUTSIDE)
         moon_count_replaced = 0
         moon_data = self._json_data["main"]["moons"]["moons"]
         moon_count = len(moon_data)
@@ -114,7 +121,7 @@ class SectionReplacer:
     def _get_moon_risk(self, moon) -> MoonRisk:
         moon_name = moon["key"]
         moon_name = self._strip_to_alpha(moon_name)
-        return self._json_data["extra"]["moons"][moon_name]["risk"]
+        return self._json_data[ConfigSyncer.JsonFileName.EXTRA.value]["moons"][moon_name]["risk"]
 
     def _strip_to_alpha(self, input_string):
         return re.sub(r'[^a-zA-Z]', '', input_string)

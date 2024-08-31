@@ -35,7 +35,7 @@ class RarityModifier:
             set_rarity_to = UserActionGetter.get_amount_to_set_rarity_to()
             print("\nSetting monster rarities in {} moons to {}... Please wait...".format(moon_count,
                                                                                           set_rarity_to))
-            self._set_monster_rarities_to(set_raise_rarity_to, moon_data)
+            self._set_monster_rarities_to(set_rarity_to, moon_data)
         elif user_choice == UserActionGetter.ChangeRarity.RAISE.value:
             change_rarity_by = UserActionGetter.get_amount_to_raise_rarity_by()
             print("\nRaising monster rarities in {} moons by {}... Please wait...".format(moon_count,

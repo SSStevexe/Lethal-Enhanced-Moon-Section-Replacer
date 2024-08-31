@@ -27,7 +27,7 @@ class ConfigSyncer:
             "inside": "inside.json",
             "daytime": "daytime.json",
             "main": "main.json",
-            "extra": "moon_extra_info.json",
+            "moon_extra_info": "moon_extra_info.json",
             "options_by_risk": "options_by_risk.json"
         }
         self._json_data = {
@@ -36,7 +36,7 @@ class ConfigSyncer:
             "inside": {},
             "daytime": {},
             "main": {},
-            "extra": {},
+            "moon_extra_info": {},
             "options_by_risk": {}
         }
 
@@ -110,15 +110,15 @@ class ConfigSyncer:
             self._log("Missing moons in moon_extra_info.json: {} - ❌\n".format(missing_moons))
             for moon_name in missing_moons:
                 self._log("Adding ->{}<- to moon_extra_info.json\n".format(moon_name))
-                self._json_data["extra"]["moons"][moon_name] = dict(risk="")
-            self._write_to_file(self._json_data["extra"], "extra")
+                self._json_data[ConfigSyncer.JsonFileName.EXTRA.value]["moons"][moon_name] = dict(risk="")
+            self._write_to_file(ConfigSyncer.JsonFileName.EXTRA)
             self._log(
                 "Make sure to update the risk levels for the new moons in {} before continuing.\n".format(
-                    self._json_file_names["extra"]))
+                    self._json_file_names[ConfigSyncer.JsonFileName.EXTRA.value]))
             input("Press Enter to continue...")
             exit(0)
         else:
-            self._log("No missing moons in {}. ✅\n".format(self._json_file_names["extra"]))
+            self._log("No missing moons in {}. ✅\n".format(self._json_file_names[ConfigSyncer.JsonFileName.EXTRA.value]))
 
     def _remove_outdated_moon_extra_info_data(self):
         main_moon_names = self._get_moon_names_from_main()
@@ -128,15 +128,15 @@ class ConfigSyncer:
             self._log("Outdated moons in moon_extra_info.json: {}\n".format(outdated_moons))
             for moon_name in outdated_moons:
                 self._log("Removing ->{}<- from moon_extra_info.json\n".format(moon_name))
-                del self._json_data["extra"]["moons"][moon_name]
-                self._write_to_file(self._json_data["extra"])
-                self._log(
-                    "Make sure to update the risk levels for the new moons in {} before continuing.\n".format(
-                        self._json_file_names["extra"]))
-                input("Press Enter to continue...")
-                exit(0)
+                del self._json_data[ConfigSyncer.JsonFileName.EXTRA.value]["moons"][moon_name]
+            self._write_to_file(ConfigSyncer.JsonFileName.EXTRA)
+            self._log(
+                "Make sure to update the risk levels for the new moons in {} before continuing.\n".format(
+                    self._json_file_names[ConfigSyncer.JsonFileName.EXTRA.value]))
+            input("Press Enter to continue...")
+            exit(0)
         else:
-            self._log("No outdated moons in {}. ✅\n".format(self._json_file_names["extra"]))
+            self._log("No outdated moons in {}. ✅\n".format(self._json_file_names[ConfigSyncer.JsonFileName.EXTRA.value]))
 
     def _write_to_file(self, json_file_name: JsonFileName):
         with open(f"{self._json_file_directory_name}/{self._json_file_names[json_file_name.value]}", "w") as f:
@@ -152,7 +152,7 @@ class ConfigSyncer:
         return moon_names
 
     def _get_extra_info_moon_names(self):
-        moons = self._json_data["extra"]["moons"]
+        moons = self._json_data[ConfigSyncer.JsonFileName.EXTRA.value]["moons"]
         moon_names = []
         for key, value in moons.items():
             moon_names.append(key)
@@ -167,17 +167,19 @@ class ConfigSyncer:
 
     def _get_scrap_item_names_from_user(self):
         scraps = []
-        for scrap in self._json_data["scrap"]:
+        for scrap in self._json_data[ConfigSyncer.JsonFileName.SCRAP.value]:
             scraps.append(scrap["key"])
         return set(scraps)
 
     def _update_scrap_data(self):
         # Get scrap names from main.json
-        self._log("Syncing {} and {}\n".format(self._json_file_names["main"], self._json_file_names["scrap"]))
+        self._log("Syncing {} and {}\n".format(self._json_file_names[ConfigSyncer.JsonFileName.MAIN.value], self._json_file_names[ConfigSyncer.JsonFileName.SCRAP.value]))
         main_scrap_item_names = self._get_scrap_item_names_from_main()
         user_scrap_item_names = self._get_scrap_item_names_from_user()
         missing_scraps_in_user_file = set(main_scrap_item_names) - set(user_scrap_item_names)
         user_scraps_not_in_main_file = set(user_scrap_item_names) - set(main_scrap_item_names)
+        self._log("Scrap count in main.json: {}\n".format(len(main_scrap_item_names)))
+        self._log("Scrap count in scraps.json: {}\n".format(len(user_scrap_item_names)))
         if len(missing_scraps_in_user_file) > 0:
             self._add_missing_scraps_to_user_file(missing_scraps_in_user_file)
         if len(user_scraps_not_in_main_file) > 0:
@@ -188,18 +190,18 @@ class ConfigSyncer:
         self._log("Missing scraps in scraps.json: {}\n".format(missing_scraps))
         for scrap in missing_scraps:
             self._log("Adding ->{}<- to scraps.json\n".format(scrap))
-            self._json_data["scrap"].append(dict(key=scrap, value=dict(override=True, rarity="")))
-            self._write_to_file(self._json_data["scrap"], "scrap")
+            self._json_data[ConfigSyncer.JsonFileName.SCRAP.value].append(dict(key=scrap, value=dict(override=True, rarity="")))
+            self._write_to_file(ConfigSyncer.JsonFileName.SCRAP)
         self._log("Make sure to update the rarity levels for the new scraps in {} before continuing.\n".format(
-            self._json_file_names["scrap"]))
+            self._json_file_names[ConfigSyncer.JsonFileName.SCRAP.value]))
         input("Press Enter to continue...")
         exit(0)
 
     def _remove_outdated_scraps_from_user_file(self, outdated_scraps):
-        self._log("Scraps in {} not in {}: {}\n".format(self._json_file_names["scrap"], self._json_file_names["main"],
+        self._log("Scraps in {} not in {}: {}\n".format(self._json_file_names[ConfigSyncer.JsonFileName.SCRAP.value], self._json_file_names[ConfigSyncer.JsonFileName.MAIN.value],
                                                         outdated_scraps))
-        self._json_data["scrap"] = [x for x in self._json_data["scrap"] if x["key"] not in outdated_scraps]
-        self._write_to_file(self._json_data["scrap"], "scrap")
+        self._json_data[ConfigSyncer.JsonFileName.SCRAP.value] = [x for x in self._json_data[ConfigSyncer.JsonFileName.SCRAP.value] if x["key"] not in outdated_scraps]
+        self._write_to_file(ConfigSyncer.JsonFileName.SCRAP)
         self._log("Removed from scraps.json ✅\n")
 
     def _log(self, text):
@@ -233,7 +235,7 @@ class ConfigSyncer:
             new_risk["risk"] = risk
             self._log("Adding ->{}<- to options_by_risk.json\n".format(risk))
             self._json_data["options_by_risk"].append(new_risk)
-        self._write_to_file(self._json_data["options_by_risk"], "options_by_risk")
+        self._write_to_file(ConfigSyncer.JsonFileName.OPTIONS_BY_RISK)
         self._log("Make sure to update the price set for the new risks in {} before continuing.\n".format(
             self._json_file_names["options_by_risk"]))
         input("Press Enter to continue...")
@@ -241,7 +243,7 @@ class ConfigSyncer:
 
     def _sync_monsters_available(self):
         self._log("Syncing monsters available in {} and adding if necessary to {} and {}\n".format(
-            self._json_file_names["main"],
+            self._json_file_names[ConfigSyncer.JsonFileName.MAIN.value],
             self._json_file_names["inside"], self._json_file_names["outside"]))
 
         if self._skip_outside:
@@ -341,7 +343,7 @@ class ConfigSyncer:
 
         self._log("Checking all json files do not contain empty rarity values...\n")
 
-        for moon_name, risk in self._json_data["extra"]["moons"].items():
+        for moon_name, risk in self._json_data[ConfigSyncer.JsonFileName.EXTRA.value]["moons"].items():
             if risk["risk"] == "":
                 self._log(f"moon_extra_info.json contains empty rarity values. First triggered entry: {moon_name} - ❌")
                 input("Press Enter to exit...")
@@ -354,7 +356,7 @@ class ConfigSyncer:
                 input("Press Enter to exit...")
                 exit(0)
 
-        check_empty_rarity(self._json_data["scrap"], "Scrap.json")
+        check_empty_rarity(self._json_data[ConfigSyncer.JsonFileName.SCRAP.value], "Scrap.json")
 
         json_file_tokens = ["outside", "inside", "daytime"]
 
