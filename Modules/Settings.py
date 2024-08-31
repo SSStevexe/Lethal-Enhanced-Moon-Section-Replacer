@@ -44,7 +44,6 @@ class Settings:
             self._main_setting_key: {
                 "ScriptBehavior": {
                     self.ScriptBehavior.SettingName.IGNORE_OUTSIDE.value: False,
-                    self.ScriptBehavior.SettingName.TEST_SETTING.value: "DefaultValue"
                 }
             }
         }
