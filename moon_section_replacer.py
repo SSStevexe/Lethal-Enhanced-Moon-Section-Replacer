@@ -3,6 +3,7 @@ from Modules.MoonPriceUpdater import MoonPriceUpdater
 from Modules.RarityModifier import RarityModifier
 from Modules.SectionReplacer import SectionReplacer
 import Modules.UserActionGetter as UserActionGetter
+
 # main function
 if __name__ == "__main__":
     # Initialize classes

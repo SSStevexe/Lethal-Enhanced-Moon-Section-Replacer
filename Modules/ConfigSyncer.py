@@ -7,7 +7,6 @@ from Modules.Settings import Settings
 
 
 class ConfigSyncer:
-
     class JsonFileName(Enum):
         SCRAP = "scrap"
         OUTSIDE = "outside"
@@ -16,7 +15,6 @@ class ConfigSyncer:
         MAIN = "main"
         EXTRA = "moon_extra_info"
         OPTIONS_BY_RISK = "options_by_risk"
-
 
     def __init__(self):
         self._log_prefix = "ConfigSyncer: "
@@ -277,7 +275,8 @@ class ConfigSyncer:
 
         if len(missing_monsters_outside) > 0:
             if not self._skip_outside:
-                self._log("Make sure to update the rarity levels for the new monsters in outside.json before continuing.\n")
+                self._log(
+                    "Make sure to update the rarity levels for the new monsters in outside.json before continuing.\n")
                 input("Press Enter to continue...")
                 exit(0)
 
@@ -286,8 +285,8 @@ class ConfigSyncer:
             input("Press Enter to continue...")
             exit(0)
 
-
-    def _remove_monsters_from_inside_and_outside_json(self, no_longer_used_monsters: list, target_json_file: JsonFileName):
+    def _remove_monsters_from_inside_and_outside_json(self, no_longer_used_monsters: list,
+                                                      target_json_file: JsonFileName):
         for monster in no_longer_used_monsters:
             self._log("Removing ->{}<- from {}.json\n".format(monster, target_json_file.value))
             for risk_entry in self._json_data[target_json_file.value]:
@@ -368,4 +367,3 @@ class ConfigSyncer:
                 check_empty_rarity(json_file["data"], f"{token.capitalize()}.json")
 
         self._log("All json files do not contain empty rarity values. ✅\n")
-
