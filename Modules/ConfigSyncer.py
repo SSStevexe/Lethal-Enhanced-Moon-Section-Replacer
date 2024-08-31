@@ -324,10 +324,15 @@ class ConfigSyncer:
 
     def _add_monsters_to_risk_list(self, missing_monsters: list, json_file_name: JsonFileName):
         self._log("Missing monsters in {}.json: {}".format(json_file_name.value, missing_monsters))
+        start_rarity = self._settings_reader.get_setting_value(Settings.ScriptBehavior.SettingName.MISSING_MONSTER_START_RARITY)
+        rarity_increase = self._settings_reader.get_setting_value(Settings.ScriptBehavior.SettingName.INCREASE_MONSTER_RARITY_PER_RISK)
         for monster in missing_monsters:
             self._log("Adding ->{}<- to {}.json".format(monster, json_file_name.value))
-            for risk_entry in self._json_data[json_file_name.value]:
-                risk_entry["data"].append({"key": monster, "value": {"override": True, "rarity": ""}})
+            for index,risk_entry in enumerate(self._json_data[json_file_name.value]):
+                if index == 0:
+                    risk_entry["data"].append({"key": monster, "value": {"override": True, "rarity": start_rarity}})
+                else:
+                    risk_entry["data"].append({"key": monster, "value": {"override": True, "rarity": start_rarity + (rarity_increase * index)}})
         self._write_to_file(json_file_name)
         self._log("Monsters added to {}.json ✅".format(json_file_name.value))
 

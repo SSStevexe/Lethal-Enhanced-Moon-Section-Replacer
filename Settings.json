@@ -1,7 +1,9 @@
 {
   "Settings": {
     "ScriptBehavior": {
-      "IgnoreOutsideJsonModifications": true
+      "IgnoreOutsideJsonModifications": true,
+      "MissingMonsterStartRarity": 5,
+      "IncreaseMonsterRarityPerRisk": 15
     }
   }
 }
