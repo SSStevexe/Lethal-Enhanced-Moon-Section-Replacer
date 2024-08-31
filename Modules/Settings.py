@@ -12,7 +12,7 @@ class Settings:
         class SettingDescription(Enum):
             IGNORE_OUTSIDE = "Ignore outside json modifications. Outside.json will not be modified if set to True."
             MISSING_MONSTER_START_RARITY = "The starting rarity at D- Risk of the monster if the rarity is not found in the json file."
-            INCREASE_MONSTER_RARITY_PER_RISK = "The amount of rarity to increase per risk level. Only works if MISSING_MONSTER_START_RARITY is > 0."
+            INCREASE_MONSTER_RARITY_PER_RISK = "The amount of rarity to increase per risk level."
 
         class SettingType(Enum):
             IGNORE_OUTSIDE = bool,
@@ -37,7 +37,7 @@ class Settings:
         print(self._log_prefix + message)
 
     def _print_settings_and_descriptions(self):
-        self._log("Printing settings and descriptions:")
+        self._log("Printing settings and descriptions:\n")
         # Calculate maximum lengths for alignment
         max_section_length = max(len(section) for section in self._settings.keys())
         max_setting_name_length = max(
@@ -50,7 +50,7 @@ class Settings:
                 value = str(setting['value'])
                 description = setting['description']
                 self._log(
-                    f"  {setting_name.ljust(max_setting_name_length)}: {value.ljust(max_value_length)} - {description}")
+                    f"{setting_name.ljust(max_setting_name_length)}: {value.ljust(max_value_length)} - {description}\n")
         input("\nPress enter to continue...")
 
     def _read_settings(self):
