@@ -19,7 +19,7 @@ class Settings:
             MISSING_MONSTER_START_RARITY = int,
             INCREASE_MONSTER_RARITY_PER_RISK = int
 
-    def __init__(self, path=""):
+    def __init__(self, path="", print_settings=False):
         self._log_prefix = "Settings Module: "
         self._path = path
         # Initialize the settings dictionary with a dictionary for each section
@@ -31,7 +31,8 @@ class Settings:
         self._settings_json = self._read_settings()
         self._create_settings()
         self._validate_setting_types()
-        self._print_settings_and_descriptions()
+        if print_settings is True:
+            self._print_settings_and_descriptions()
 
     def _log(self, message: str):
         print(self._log_prefix + message)

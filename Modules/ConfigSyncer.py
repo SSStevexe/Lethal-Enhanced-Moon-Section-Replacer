@@ -45,7 +45,7 @@ class ConfigSyncer:
             "Company"
         }
 
-        self._settings_reader = Settings()
+        self._settings_reader = Settings("", True)
         self._skip_outside = self._settings_reader.get_setting_value(Settings.ScriptBehavior.SettingName.IGNORE_OUTSIDE)
         self._load_files()
         self._check_all_json_do_not_contain_empty_rarity()

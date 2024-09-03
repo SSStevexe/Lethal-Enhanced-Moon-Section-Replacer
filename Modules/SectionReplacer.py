@@ -98,7 +98,8 @@ class SectionReplacer:
                               self.Section.INSIDE.DAYTIME] if section_to_update == self.Section.ALL else [
             section_to_update]
         if self._settings.get_setting_value(Settings.ScriptBehavior.SettingName.IGNORE_OUTSIDE) is True:
-            sections_to_update.remove(self.Section.OUTSIDE)
+            if self.Section.OUTSIDE in sections_to_update:
+                sections_to_update.remove(self.Section.OUTSIDE)
         moon_count_replaced = 0
         moon_data = self._json_data["main"]["moons"]["moons"]
         moon_count = len(moon_data)
