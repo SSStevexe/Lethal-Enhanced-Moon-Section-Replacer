@@ -1,6 +1,8 @@
 import json
 import time
 
+from Modules.ConfigSyncer import ConfigSyncer
+
 
 class MoonPriceUpdater:
 
@@ -31,12 +33,12 @@ class MoonPriceUpdater:
 
     def _get_moon_risk_by_moon_name(self, moon_name):
         moon_name = ''.join(e for e in moon_name if e.isalpha())
-        data = self._json_files["extra"]["moons"].get(moon_name)
+        data = self._json_files[ConfigSyncer.JsonFileName.EXTRA.value]["moons"].get(moon_name)
         if data is not None:
             return data["risk"]
         return None
 
     def _write_json_to_disk(self):
         with open("{}/{}".format(self._json_file_directory_name, "main.json"), "w") as f:
-            json.dump(self._json_files["main"], f, indent=4)
+            json.dump(self._json_files[ConfigSyncer.JsonFileName.MAIN.value], f, indent=4)
         self._log("Json Data Written to main.json! ✅\n")

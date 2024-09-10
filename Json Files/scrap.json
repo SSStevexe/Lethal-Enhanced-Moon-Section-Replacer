@@ -252,28 +252,7 @@
         }
     },
     {
-        "key": "Anvil",
-        "value": {
-            "override": true,
-            "rarity": 20
-        }
-    },
-    {
-        "key": "Baseball bat",
-        "value": {
-            "override": true,
-            "rarity": 20
-        }
-    },
-    {
         "key": "Beer can",
-        "value": {
-            "override": true,
-            "rarity": 20
-        }
-    },
-    {
-        "key": "Brick",
         "value": {
             "override": true,
             "rarity": 20
@@ -343,13 +322,6 @@
         }
     },
     {
-        "key": "Fireaxe",
-        "value": {
-            "override": true,
-            "rarity": 20
-        }
-    },
-    {
         "key": "Fire extinguisher",
         "value": {
             "override": true,
@@ -399,28 +371,7 @@
         }
     },
     {
-        "key": "Keyboard",
-        "value": {
-            "override": true,
-            "rarity": 20
-        }
-    },
-    {
-        "key": "Lantern",
-        "value": {
-            "override": true,
-            "rarity": 20
-        }
-    },
-    {
         "key": "Library lamp",
-        "value": {
-            "override": true,
-            "rarity": 20
-        }
-    },
-    {
-        "key": "Plant",
         "value": {
             "override": true,
             "rarity": 20
@@ -463,13 +414,6 @@
     },
     {
         "key": "Socket Wrench",
-        "value": {
-            "override": true,
-            "rarity": 20
-        }
-    },
-    {
-        "key": "Squeaky toy",
         "value": {
             "override": true,
             "rarity": 20
@@ -826,13 +770,6 @@
         }
     },
     {
-        "key": "Key",
-        "value": {
-            "override": true,
-            "rarity": 18
-        }
-    },
-    {
         "key": "Light shoes",
         "value": {
             "override": true,
@@ -1008,13 +945,6 @@
         }
     },
     {
-        "key": "Flashlight",
-        "value": {
-            "override": true,
-            "rarity": 0
-        }
-    },
-    {
         "key": "Stapler",
         "value": {
             "override": true,
@@ -1033,13 +963,6 @@
         "value": {
             "override": true,
             "rarity": 10
-        }
-    },
-    {
-        "key": "???",
-        "value": {
-            "override": true,
-            "rarity": 0
         }
     },
     {
@@ -2814,20 +2737,6 @@
         }
     },
     {
-        "key": "ImmersiveLantern",
-        "value": {
-            "override": true,
-            "rarity": 0
-        }
-    },
-    {
-        "key": "ImmersiveKeyboard",
-        "value": {
-            "override": true,
-            "rarity": 0
-        }
-    },
-    {
         "key": "ImmersivePlant",
         "value": {
             "override": true,
@@ -2877,13 +2786,6 @@
         }
     },
     {
-        "key": "Meteorite",
-        "value": {
-            "override": true,
-            "rarity": 0
-        }
-    },
-    {
         "key": "Nature's Mace",
         "value": {
             "override": true,
@@ -2898,21 +2800,7 @@
         }
     },
     {
-        "key": "ImmersiveBrick",
-        "value": {
-            "override": true,
-            "rarity": 0
-        }
-    },
-    {
         "key": "Icy Hammer",
-        "value": {
-            "override": true,
-            "rarity": 0
-        }
-    },
-    {
-        "key": "ImmersiveBaseball bat",
         "value": {
             "override": true,
             "rarity": 0
@@ -2926,35 +2814,7 @@
         }
     },
     {
-        "key": "ImmersiveSqueaky toy",
-        "value": {
-            "override": true,
-            "rarity": 0
-        }
-    },
-    {
-        "key": "ImmersiveFireaxe",
-        "value": {
-            "override": true,
-            "rarity": 0
-        }
-    },
-    {
         "key": "Toilet paper",
-        "value": {
-            "override": true,
-            "rarity": 0
-        }
-    },
-    {
-        "key": "ImmersiveFan",
-        "value": {
-            "override": true,
-            "rarity": 0
-        }
-    },
-    {
-        "key": "ImmersiveClock",
         "value": {
             "override": true,
             "rarity": 0
@@ -2969,6 +2829,342 @@
     },
     {
         "key": "Soccer ball",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "IBrick",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Lebron",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Knuckles",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Chemical bottle",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Nerd",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Rifle",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "ISqueaky toy",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "IFireAxe",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Ruby",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Magazine",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Cid",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Iron Giant",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Shadow",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Superman",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Fosgreath",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Swag Baby",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Sapphire",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Rat",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Rubber Duck",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "CreatureHead",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Sonic",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Crawly",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Clyde",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Rayman",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Polaroid",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Reindog",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Mini Nuke",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Broda",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Saul Goodman",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Optimus Prime",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Deku",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Bulb",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "IClock",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "IFan",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Emerald",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Hamster",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "CreatureHand",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Chris Griffin",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Monkey Cube",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "IKeyboard",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "IBaseball bat",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "ILantern",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Saul Bigman",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Bober Kurwa",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Golden Reindog",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Lightning McQueen",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Remy",
+        "value": {
+            "override": true,
+            "rarity": 0
+        }
+    },
+    {
+        "key": "Frieza",
         "value": {
             "override": true,
             "rarity": 0
